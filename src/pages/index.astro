@@ -43,7 +43,7 @@ import Layout from "../layouts/Layout.astro";
           <p class="reveal mt-5 max-w-[44ch] text-base leading-7 text-muted-ink sm:text-lg sm:leading-8" style="--reveal-delay:80ms">
             Studio interior fiktif untuk rumah &amp; apartemen Skandinavia/kontemporer.
           </p>
-          <div class="reveal mt-8 flex flex-wrap items-center gap-3" style="--reveal-delay:140ms">
+          <div class="reveal mt-8 flex flex-wrap items-center gap-x-6 gap-y-3" style="--reveal-delay:140ms">
             <a
               href="#kontak"
               class="inline-flex min-h-11 items-center gap-2 rounded-full bg-ink px-6 py-3 text-[15px] font-semibold text-paper transition-colors duration-200 hover:bg-night-soft"
@@ -55,18 +55,17 @@ import Layout from "../layouts/Layout.astro";
             </a>
             <a
               href="#proses"
-              class="inline-flex min-h-11 items-center rounded-full border border-line-strong bg-card px-6 py-3 text-[15px] font-semibold text-ink transition-colors duration-200 hover:border-gold-line hover:bg-gold-soft"
+              class="inline-flex min-h-11 items-center gap-1.5 rounded-lg px-1 py-2 text-[15px] font-semibold text-ink-soft underline decoration-line-strong decoration-2 underline-offset-4 transition-colors duration-200 hover:text-ink"
             >
               Lihat cara kerja
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </a>
           </div>
-          <div class="reveal mt-8 flex flex-wrap items-center gap-2" style="--reveal-delay:200ms">
-            <span class="inline-flex items-center gap-2 rounded-full border border-line bg-card px-4 py-2 text-[13px] leading-5 text-muted-ink">
-              <span class="inline-block h-2 w-2 rounded-full bg-gold" aria-hidden="true"></span>
-              Studio fiktif — contoh portofolio
-            </span>
-            <span class="inline-flex items-center rounded-full border border-sage-line bg-sage-soft px-3.5 py-2 text-[13px] font-medium text-ink">Konsep → instalasi</span>
-          </div>
+          <p class="reveal mt-5 text-[13px] leading-6 text-muted-ink" style="--reveal-delay:200ms">
+            Studio fiktif · contoh portofolio — konsep → instalasi
+          </p>
         </div>
 
         <!-- Visual utama: ilustrasi ruang, bukan foto proyek -->
@@ -282,31 +281,85 @@ import Layout from "../layouts/Layout.astro";
         <div class="mt-12 grid gap-6 sm:grid-cols-3">
           <figure class="reveal overflow-hidden rounded-2xl border border-line bg-card shadow-[0_20px_40px_-28px_rgba(28,25,23,0.4)]">
             <svg viewBox="0 0 300 200" class="block h-auto w-full" aria-hidden="true">
-              <rect width="300" height="130" fill="#f3ebe1" /><rect y="130" width="300" height="70" fill="#d9b98f" />
+              <rect width="300" height="132" fill="#f3ebe1" /><rect y="132" width="300" height="68" fill="#d9b98f" />
+              <g stroke="#b68f5e" stroke-width="1.2" opacity="0.65"><path d="M0 150h300M0 168h300M0 186h300" /></g>
+              <path d="M44 18 134 132 44 132Z" fill="#ffffff" opacity="0.5" />
+              <rect x="28" y="18" width="52" height="92" rx="4" fill="#fffdfb" stroke="#1c1917" stroke-width="2" />
+              <path d="M54 18v92" stroke="#1c1917" stroke-width="1.4" />
+              <ellipse cx="112" cy="158" rx="72" ry="10" fill="#1c1917" opacity="0.08" />
               <rect x="40" y="60" width="110" height="70" rx="10" fill="#f4efe8" stroke="#1c1917" stroke-width="2" />
-              <rect x="160" y="96" width="100" height="34" rx="6" fill="#fff" stroke="#1c1917" stroke-width="2" />
+              <path d="M66 74v42M110 74v42" stroke="#d6cdbf" stroke-width="1.6" />
+              <rect x="50" y="88" width="34" height="28" rx="7" fill="#fbe7d6" stroke="#9a3f1f" stroke-width="1.6" />
+              <rect x="160" y="96" width="100" height="34" rx="6" fill="#fffdfb" stroke="#1c1917" stroke-width="2" />
+              <path d="M172 130v12m76-12v12" stroke="#1c1917" stroke-width="2" />
               <circle cx="232" cy="52" r="14" fill="#f7e8d3" stroke="#92400e" stroke-width="2" />
-              <path d="M232 38v-14" stroke="#1c1917" stroke-width="2" />
+              <path d="M232 38V24" stroke="#1c1917" stroke-width="2" />
             </svg>
-            <figcaption class="flex items-center justify-between px-4 py-3 text-sm"><span class="font-semibold">Ruang tamu</span><span class="text-muted-ink">cahaya pagi</span></figcaption>
+            <figcaption class="px-4 pt-3 pb-3.5">
+              <div class="flex items-center justify-between text-sm"><span class="font-semibold">Ruang tamu</span><span class="text-muted-ink">cahaya pagi</span></div>
+              <div class="mt-2.5 flex items-center justify-between gap-2 border-t border-line pt-2.5">
+                <span class="flex items-center gap-1.5" aria-hidden="true">
+                  <span class="h-5 w-5 rounded-md border border-line-strong bg-[#d9b98f]"></span>
+                  <span class="h-5 w-5 rounded-md border border-line bg-[#f4efe8]"></span>
+                  <span class="h-5 w-5 rounded-md border border-clay-line bg-clay-soft"></span>
+                  <span class="ml-1 text-[12px] font-medium text-muted-ink">oak · kapur · linen</span>
+                </span>
+                <span class="text-[12px] font-semibold tracking-wide text-muted-ink">ILUSTRASI</span>
+              </div>
+            </figcaption>
           </figure>
           <figure class="reveal overflow-hidden rounded-2xl border border-line bg-card shadow-[0_20px_40px_-28px_rgba(28,25,23,0.4)]" style="--reveal-delay:80ms">
             <svg viewBox="0 0 300 200" class="block h-auto w-full" aria-hidden="true">
-              <rect width="300" height="130" fill="#f0f2e9" /><rect y="130" width="300" height="70" fill="#e9e2d8" />
+              <rect width="300" height="132" fill="#f0f2e9" /><rect y="132" width="300" height="68" fill="#e9e2d8" />
+              <path d="M0 150h300M0 170h300" stroke="#c8cfb8" stroke-width="1.2" opacity="0.8" />
+              <ellipse cx="150" cy="162" rx="104" ry="10" fill="#1c1917" opacity="0.07" />
               <rect x="50" y="90" width="200" height="50" rx="10" fill="#fffdfb" stroke="#1c1917" stroke-width="2" />
+              <path d="M64 104v22M236 104v22" stroke="#d6cdbf" stroke-width="1.6" />
               <rect x="50" y="66" width="200" height="28" rx="8" fill="#e8ebe0" stroke="#4f5d46" stroke-width="2" />
-              <rect x="70" y="74" width="50" height="14" rx="5" fill="#fff" /><rect x="180" y="74" width="50" height="14" rx="5" fill="#fff" />
+              <path d="M62 80h76M62 86h48" stroke="#c8cfb8" stroke-width="1.4" />
+              <rect x="70" y="74" width="50" height="14" rx="5" fill="#fffdfb" /><rect x="180" y="74" width="50" height="14" rx="5" fill="#fffdfb" />
+              <circle cx="150" cy="34" r="11" fill="#f7e8d3" stroke="#92400e" stroke-width="1.8" />
+              <path d="M150 23V10" stroke="#1c1917" stroke-width="1.8" />
             </svg>
-            <figcaption class="flex items-center justify-between px-4 py-3 text-sm"><span class="font-semibold">Kamar</span><span class="text-muted-ink">linen + sage</span></figcaption>
+            <figcaption class="px-4 pt-3 pb-3.5">
+              <div class="flex items-center justify-between text-sm"><span class="font-semibold">Kamar</span><span class="text-muted-ink">linen + sage</span></div>
+              <div class="mt-2.5 flex items-center justify-between gap-2 border-t border-line pt-2.5">
+                <span class="flex items-center gap-1.5" aria-hidden="true">
+                  <span class="h-5 w-5 rounded-md border border-sage-line bg-sage-soft"></span>
+                  <span class="h-5 w-5 rounded-md border border-line bg-[#fffdfb]"></span>
+                  <span class="h-5 w-5 rounded-md border border-line-strong bg-[#d9b98f]"></span>
+                  <span class="ml-1 text-[12px] font-medium text-muted-ink">sage · linen · oak</span>
+                </span>
+                <span class="text-[12px] font-semibold tracking-wide text-muted-ink">ILUSTRASI</span>
+              </div>
+            </figcaption>
           </figure>
           <figure class="reveal overflow-hidden rounded-2xl border border-line bg-card shadow-[0_20px_40px_-28px_rgba(28,25,23,0.4)]" style="--reveal-delay:140ms">
             <svg viewBox="0 0 300 200" class="block h-auto w-full" aria-hidden="true">
-              <rect width="300" height="130" fill="#faf5f2" /><rect y="130" width="300" height="70" fill="#d9b98f" />
-              <rect x="30" y="50" width="240" height="80" rx="8" fill="#fff" stroke="#1c1917" stroke-width="2" />
+              <rect width="300" height="132" fill="#faf5f2" /><rect y="132" width="300" height="68" fill="#d9b98f" />
+              <g stroke="#b68f5e" stroke-width="1.2" opacity="0.6"><path d="M0 152h300M0 172h300M0 190h300" /></g>
+              <ellipse cx="150" cy="160" rx="110" ry="9" fill="#1c1917" opacity="0.07" />
+              <rect x="30" y="50" width="240" height="80" rx="8" fill="#fffdfb" stroke="#1c1917" stroke-width="2" />
               <path d="M30 84h240" stroke="#e7e0d9" stroke-width="2" />
-              <rect x="48" y="60" width="40" height="14" rx="4" fill="#e8ebe0" /><rect x="190" y="100" width="60" height="16" rx="4" fill="#f7e8d3" stroke="#92400e" />
+              <path d="M120 50v80M200 50v34" stroke="#e7e0d9" stroke-width="1.6" />
+              <rect x="48" y="60" width="40" height="14" rx="4" fill="#e8ebe0" stroke="#4f5d46" stroke-width="1.4" />
+              <rect x="48" y="96" width="52" height="20" rx="4" fill="#f4efe8" stroke="#d6cdbf" stroke-width="1.4" />
+              <rect x="190" y="100" width="60" height="16" rx="4" fill="#f7e8d3" stroke="#92400e" stroke-width="1.6" />
+              <circle cx="246" cy="40" r="9" fill="#f7e8d3" stroke="#92400e" stroke-width="1.6" />
+              <path d="M246 31V20" stroke="#1c1917" stroke-width="1.6" />
             </svg>
-            <figcaption class="flex items-center justify-between px-4 py-3 text-sm"><span class="font-semibold">Dapur</span><span class="text-muted-ink">oak + kapur</span></figcaption>
+            <figcaption class="px-4 pt-3 pb-3.5">
+              <div class="flex items-center justify-between text-sm"><span class="font-semibold">Dapur</span><span class="text-muted-ink">oak + kapur</span></div>
+              <div class="mt-2.5 flex items-center justify-between gap-2 border-t border-line pt-2.5">
+                <span class="flex items-center gap-1.5" aria-hidden="true">
+                  <span class="h-5 w-5 rounded-md border border-line-strong bg-[#d9b98f]"></span>
+                  <span class="h-5 w-5 rounded-md border border-line bg-[#fffdfb]"></span>
+                  <span class="h-5 w-5 rounded-md border border-sage-line bg-sage-soft"></span>
+                  <span class="ml-1 text-[12px] font-medium text-muted-ink">oak · kapur · sage</span>
+                </span>
+                <span class="text-[12px] font-semibold tracking-wide text-muted-ink">ILUSTRASI</span>
+              </div>
+            </figcaption>
           </figure>
         </div>
 
