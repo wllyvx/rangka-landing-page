@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout
   title="Rangka — Studio Interior Hunian"
-  description="Rangka adalah studio interior fiktif untuk rumah dan apartemen Skandinavia/kontemporer. Konsultasi, konsep, hingga instalasi dalam satu alur transparan."
+  description="Rangka adalah studio interior fiktif untuk rumah dan apartemen — terang, kayu, kain natural. Konsultasi sampai instalasi dalam satu alur transparan."
 >
   <!-- Header -->
   <header class="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur-sm">
@@ -23,16 +23,32 @@ import Layout from "../layouts/Layout.astro";
         <a href="#proses" class="min-h-11 rounded-lg px-4 py-2.5 text-[15px] font-medium text-ink-soft transition-colors hover:bg-gold-soft hover:text-ink">Proses</a>
         <a href="#kontak" class="min-h-11 rounded-lg px-4 py-2.5 text-[15px] font-medium text-ink-soft transition-colors hover:bg-gold-soft hover:text-ink">Kontak</a>
       </nav>
-      <a
-        href="#kontak"
-        class="inline-flex min-h-11 items-center rounded-full bg-ink px-5 py-2.5 text-[15px] font-semibold text-paper transition-colors duration-200 hover:bg-night-soft"
-      >
-        Konsultasi
-      </a>
+      <div class="flex items-center gap-2">
+        <details class="relative md:hidden">
+          <summary class="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-lg border border-line px-3 py-2.5 text-[15px] font-semibold text-ink-soft marker:content-none hover:text-ink">
+            <span class="sr-only">Buka navigasi</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M3 5.5h14M3 10h14M3 14.5h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </summary>
+          <div class="absolute top-13 right-0 w-52 rounded-2xl border border-line bg-paper p-2 shadow-[0_24px_48px_-24px_rgba(28,25,23,0.4)]">
+            <a href="#layanan" class="flex min-h-11 items-center rounded-lg px-4 py-2.5 text-[15px] font-medium text-ink-soft hover:bg-gold-soft hover:text-ink">Layanan</a>
+            <a href="#gaya" class="flex min-h-11 items-center rounded-lg px-4 py-2.5 text-[15px] font-medium text-ink-soft hover:bg-gold-soft hover:text-ink">Gaya</a>
+            <a href="#proses" class="flex min-h-11 items-center rounded-lg px-4 py-2.5 text-[15px] font-medium text-ink-soft hover:bg-gold-soft hover:text-ink">Proses</a>
+            <a href="#kontak" class="flex min-h-11 items-center rounded-lg px-4 py-2.5 text-[15px] font-medium text-ink-soft hover:bg-gold-soft hover:text-ink">Kontak</a>
+          </div>
+        </details>
+        <a
+          href="#kontak"
+          class="inline-flex min-h-11 items-center rounded-full bg-ink px-5 py-2.5 text-[15px] font-semibold text-paper transition-colors duration-200 hover:bg-night-soft"
+        >
+          Konsultasi
+        </a>
+      </div>
     </div>
   </header>
 
-  <main id="konten">
+  <main id="konten" tabindex="-1">
     <!-- Hero -->
     <section id="atas" aria-labelledby="judul-hero" class="wash-hero relative overflow-hidden">
       <div class="mx-auto grid max-w-6xl gap-12 px-5 pt-16 pb-20 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-16 lg:pt-28 lg:pb-28">
@@ -41,7 +57,7 @@ import Layout from "../layouts/Layout.astro";
             Hunian rapi dan tenang, sampai instalasi.
           </h1>
           <p class="reveal mt-5 max-w-[44ch] text-base leading-7 text-muted-ink sm:text-lg sm:leading-8" style="--reveal-delay:80ms">
-            Studio interior fiktif untuk rumah &amp; apartemen Skandinavia/kontemporer.
+            Untuk rumah &amp; apartemen: terang, kayu, kain natural — dari konsultasi sampai instalasi yang rapi.
           </p>
           <div class="reveal mt-8 flex flex-wrap items-center gap-x-6 gap-y-3" style="--reveal-delay:140ms">
             <a
@@ -150,8 +166,8 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <dt class="font-display text-xl font-semibold sm:text-2xl">Desain konsep hunian</dt>
               <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Denah, suasana, dan palet material yang bisa dibaca tukang.</dd>
-              <dd class="mt-3"><span class="inline-flex items-center rounded-full border border-line bg-paper px-3.5 py-1.5 text-[13px] font-medium text-ink-soft">Hasil: denah + daftar material</span></dd>
-              <dd class="mt-4">
+              <dd class="mt-2 text-[13px] font-medium text-muted-ink">Hasil: denah + daftar material</dd>
+              <dd class="mt-3">
                 <a
                   href="#kontak"
                   data-layanan="Desain konsep hunian"
@@ -169,26 +185,18 @@ import Layout from "../layouts/Layout.astro";
               <span class="h-10 w-10 rounded-lg border border-gold-line bg-gold-soft"></span>
               <span class="h-10 w-10 rounded-lg border border-sage-line bg-sage-soft"></span>
               <span class="h-10 w-10 rounded-lg bg-[#d9b98f]"></span>
-              <span class="text-[13px] font-medium text-muted-ink">oak · sage<br />kapur</span>
             </div>
           </div>
 
-          <div class="reveal grid gap-6 py-10 lg:grid-cols-[280px_56px_1fr] lg:items-center lg:gap-10">
-            <svg viewBox="0 0 280 140" class="h-auto w-full rounded-2xl border border-sage-line bg-sage-wash p-3" aria-hidden="true">
-              <rect x="18" y="18" width="244" height="104" fill="none" stroke="#1c1917" stroke-width="2.5" />
-              <path d="M18 60h244M100 18v104M182 18v104" stroke="#c8cfb8" stroke-width="1.5" />
-              <rect x="28" y="70" width="56" height="32" fill="#fbe7d6" stroke="#9a3f1f" stroke-width="2" />
-              <circle cx="140" cy="42" r="5" fill="#92400e" />
-              <path d="M196 96h44" stroke="#4f5d46" stroke-width="1.8" />
-            </svg>
+          <div class="reveal grid gap-6 py-10 lg:grid-cols-[56px_1fr_280px] lg:items-center lg:gap-10">
             <span class="hidden h-14 w-14 items-center justify-center rounded-2xl border border-sage-line bg-sage-wash lg:inline-flex" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 17 17 3l4 4L7 21H3v-4Z" stroke="#4f5d46" stroke-width="1.8" stroke-linejoin="round"/><path d="M13 7l4 4" stroke="#4f5d46" stroke-width="1.8"/></svg>
             </span>
             <div>
               <dt class="font-display text-xl font-semibold sm:text-2xl">Gambar kerja + pendampingan</dt>
               <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Ukuran, titik listrik, dan urutan pasang yang jelas.</dd>
-              <dd class="mt-3"><span class="inline-flex items-center rounded-full border border-line bg-paper px-3.5 py-1.5 text-[13px] font-medium text-ink-soft">Hasil: paket terukur</span></dd>
-              <dd class="mt-4">
+              <dd class="mt-2 text-[13px] font-medium text-muted-ink">Hasil: paket terukur</dd>
+              <dd class="mt-3">
                 <a
                   href="#kontak"
                   data-layanan="Gambar kerja + pendampingan"
@@ -202,6 +210,13 @@ import Layout from "../layouts/Layout.astro";
                 </a>
               </dd>
             </div>
+            <svg viewBox="0 0 280 140" class="h-auto w-full rounded-2xl border border-sage-line bg-sage-wash p-3" aria-hidden="true">
+              <rect x="18" y="18" width="244" height="104" fill="none" stroke="#1c1917" stroke-width="2.5" />
+              <path d="M18 60h244M100 18v104M182 18v104" stroke="#c8cfb8" stroke-width="1.5" />
+              <rect x="28" y="70" width="56" height="32" fill="#fbe7d6" stroke="#9a3f1f" stroke-width="2" />
+              <circle cx="140" cy="42" r="5" fill="#92400e" />
+              <path d="M196 96h44" stroke="#4f5d46" stroke-width="1.8" />
+            </svg>
           </div>
 
           <div class="reveal grid gap-6 py-10 lg:grid-cols-[56px_1fr_280px] lg:items-center lg:gap-10">
@@ -211,8 +226,8 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <dt class="font-display text-xl font-semibold sm:text-2xl">Penataan ulang tanpa bongkar</dt>
               <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Zonasi, cahaya, dan penyimpanan untuk ruang yang sudah dihuni.</dd>
-              <dd class="mt-3"><span class="inline-flex items-center rounded-full border border-line bg-paper px-3.5 py-1.5 text-[13px] font-medium text-ink-soft">Hasil: zonasi baru, tanpa renovasi besar</span></dd>
-              <dd class="mt-4">
+              <dd class="mt-2 text-[13px] font-medium text-muted-ink">Hasil: zonasi baru, tanpa renovasi besar</dd>
+              <dd class="mt-3">
                 <a
                   href="#kontak"
                   data-layanan="Penataan ulang tanpa bongkar"
@@ -233,23 +248,15 @@ import Layout from "../layouts/Layout.astro";
             </ul>
           </div>
 
-          <div class="reveal grid gap-6 py-10 lg:grid-cols-[280px_56px_1fr] lg:items-center lg:gap-10">
-            <div class="rounded-2xl border border-night-line bg-night p-5 text-paper" aria-hidden="true">
-              <p class="text-[12px] font-semibold tracking-wide text-gold-soft">DAFTAR KURASI · CONTOH</p>
-              <ul class="mt-2 space-y-1.5 text-sm leading-6">
-                <li class="flex justify-between gap-4"><span>Kursi kayu</span><span class="tnum text-gold-soft">6</span></li>
-                <li class="flex justify-between gap-4"><span>Linen natural</span><span class="tnum text-sage-soft">2 set</span></li>
-                <li class="flex justify-between gap-4"><span>Lampu hangat</span><span class="tnum text-clay-soft">1</span></li>
-              </ul>
-            </div>
+          <div class="reveal grid gap-6 py-10 lg:grid-cols-[56px_1fr_280px] lg:items-center lg:gap-10">
             <span class="hidden h-14 w-14 items-center justify-center rounded-2xl border border-line bg-card lg:inline-flex" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v5l-9 9H4v-7l9-9" stroke="#1c1917" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="10" r="1.6" fill="#1c1917"/></svg>
             </span>
             <div>
               <dt class="font-display text-xl font-semibold sm:text-2xl">Kurasi material &amp; furnitur</dt>
               <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Kayu terang, kain natural, mudah dirawat — plus alternatif.</dd>
-              <dd class="mt-3"><span class="inline-flex items-center rounded-full border border-line bg-paper px-3.5 py-1.5 text-[13px] font-medium text-ink-soft">Tanpa janji merek / harga pasti</span></dd>
-              <dd class="mt-4">
+              <dd class="mt-2 text-[13px] font-medium text-muted-ink">Tanpa janji merek / harga pasti</dd>
+              <dd class="mt-3">
                 <a
                   href="#kontak"
                   data-layanan="Kurasi material & furnitur"
@@ -262,6 +269,14 @@ import Layout from "../layouts/Layout.astro";
                   </svg>
                 </a>
               </dd>
+            </div>
+            <div class="rounded-2xl border border-night-line bg-night p-5 text-paper" aria-hidden="true">
+              <p class="text-[12px] font-semibold tracking-wide text-gold-soft">DAFTAR KURASI · CONTOH</p>
+              <ul class="mt-2 space-y-1.5 text-sm leading-6">
+                <li class="flex justify-between gap-4"><span>Kursi kayu</span><span class="tnum text-gold-soft">6</span></li>
+                <li class="flex justify-between gap-4"><span>Linen natural</span><span class="tnum text-sage-soft">2 set</span></li>
+                <li class="flex justify-between gap-4"><span>Lampu hangat</span><span class="tnum text-clay-soft">1</span></li>
+              </ul>
             </div>
           </div>
         </dl>
@@ -400,8 +415,8 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </div>
 
-        <div id="spine-wrap" class="relative mt-14 grid gap-8 lg:grid-cols-[56px_1fr] lg:gap-10">
-          <div class="relative hidden justify-center lg:flex" aria-hidden="true">
+        <div id="spine-wrap" class="relative mt-14 grid grid-cols-[36px_1fr] gap-6 lg:grid-cols-[56px_1fr] lg:gap-10">
+          <div class="relative flex justify-center" aria-hidden="true">
             <div class="spine-rail absolute top-2 bottom-2 w-[3px] rounded-full"></div>
             <div id="spine-fill" class="spine-fill absolute top-2 bottom-2 w-[3px] rounded-full"></div>
           </div>
@@ -435,6 +450,60 @@ import Layout from "../layouts/Layout.astro";
             </li>
           </ol>
         </div>
+      </div>
+    </section>
+
+    <!-- Umpan balik: contoh ilustratif, bukan ulasan nyata -->
+    <section id="umpan-balik" aria-labelledby="judul-umpan-balik" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+        <div class="max-w-[60ch]">
+          <h2 id="judul-umpan-balik" class="reveal font-display text-3xl font-semibold tracking-[-0.015em] text-balance sm:text-4xl lg:text-[2.9rem] lg:leading-[1.1]">
+            Cara kerja yang terasa jelas.
+          </h2>
+          <p class="reveal mt-4 max-w-[48ch] text-base leading-7 text-muted-ink sm:text-lg sm:leading-8">
+            Tiga contoh situasi — gambaran cara Rangka menjelaskan, bukan ulasan klien nyata.
+          </p>
+        </div>
+
+        <div class="reveal mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-2 sm:grid sm:grid-cols-3 sm:snap-none sm:overflow-visible sm:pb-0" style="--reveal-delay:80ms" tabindex="0" role="region" aria-label="Contoh situasi ilustratif">
+          <figure class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-line bg-card p-6 shadow-[0_16px_32px_-24px_rgba(28,25,23,0.35)] sm:min-w-0 sm:p-7">
+            <span class="inline-flex w-fit items-center rounded-full border border-line bg-paper px-3 py-1 text-[12px] font-semibold tracking-wide text-muted-ink">CONTOH · ILUSTRASI</span>
+            <blockquote class="mt-4 flex-1 text-[15px] leading-7 text-ink-soft">
+              “Denah zonasinya terbaca — area kerja dan istirahat akhirnya pisah tanpa bongkar. Setiap perubahan tercatat, jadi tidak ada tebakan di tengah jalan.”
+            </blockquote>
+            <figcaption class="mt-5 border-t border-line pt-4 text-sm leading-6">
+              <span class="font-semibold">Apartemen · penataan ulang</span>
+              <span class="block text-muted-ink">kebutuhan: zonasi tanpa renovasi besar</span>
+            </figcaption>
+          </figure>
+          <figure class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-line bg-card p-6 shadow-[0_16px_32px_-24px_rgba(28,25,23,0.35)] sm:min-w-0 sm:p-7">
+            <span class="inline-flex w-fit items-center rounded-full border border-line bg-paper px-3 py-1 text-[12px] font-semibold tracking-wide text-muted-ink">CONTOH · ILUSTRASI</span>
+            <blockquote class="mt-4 flex-1 text-[15px] leading-7 text-ink-soft">
+              “Ukuran, titik listrik, dan urutan pasang tertulis rapi. Kami paham apa yang dikerjakan dulu dan apa yang bisa menunggu tanpa khawatir.”
+            </blockquote>
+            <figcaption class="mt-5 border-t border-line pt-4 text-sm leading-6">
+              <span class="font-semibold">Rumah · konsep + gambar kerja</span>
+              <span class="block text-muted-ink">kebutuhan: keputusan selesai sebelum pasang</span>
+            </figcaption>
+          </figure>
+          <figure class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-line bg-card p-6 shadow-[0_16px_32px_-24px_rgba(28,25,23,0.35)] sm:min-w-0 sm:p-7">
+            <span class="inline-flex w-fit items-center rounded-full border border-line bg-paper px-3 py-1 text-[12px] font-semibold tracking-wide text-muted-ink">CONTOH · ILUSTRASI</span>
+            <blockquote class="mt-4 flex-1 text-[15px] leading-7 text-ink-soft">
+              “Daftar material dengan alternatif membuat pilihan tenang. Kayu terang dan kain natural, tiap barang ada tempat dan catatan rawatnya.”
+            </blockquote>
+            <figcaption class="mt-5 border-t border-line pt-4 text-sm leading-6">
+              <span class="font-semibold">Kamar tidur · kurasi material</span>
+              <span class="block text-muted-ink">kebutuhan: mudah dirawat, tanpa janji merek</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="reveal mt-6 text-[13px] leading-6 text-muted-ink sm:hidden" style="--reveal-delay:120ms">
+          Geser ke samping untuk contoh lain.
+        </p>
+        <p class="reveal mt-6 text-[13px] leading-6 text-muted-ink" style="--reveal-delay:140ms">
+          Konten contoh untuk portofolio — bukan ulasan klien nyata.
+        </p>
       </div>
     </section>
 
@@ -522,7 +591,8 @@ import Layout from "../layouts/Layout.astro";
       <p class="flex items-center gap-2.5">
         <svg width="24" height="24" viewBox="0 0 30 30" fill="none" aria-hidden="true">
           <rect x="1.5" y="1.5" width="27" height="27" rx="7" stroke="#1c1917" stroke-width="2" />
-          <circle cx="15" cy="15" r="4" fill="#92400e" />
+          <path d="M9 20V10h5.2c2.1 0 3.6 1.2 3.6 3 0 1.3-.8 2.3-2 2.7L18.5 20h-2.6l-2.4-4H11v4H9Zm2-5.6h3c1 0 1.7-.6 1.7-1.4 0-.9-.7-1.4-1.7-1.4h-3v2.8Z" fill="#1c1917" />
+          <circle cx="21" cy="21" r="2.6" fill="#92400e" />
         </svg>
         <span class="font-display text-base font-semibold">Rangka</span>
         <span class="text-sm text-muted-ink">— studio fiktif, contoh portofolio.</span>
@@ -665,8 +735,19 @@ import Layout from "../layouts/Layout.astro";
         if (input.value === layanan) input.checked = true;
       });
       templateEl.textContent = templateUntuk(layanan);
+      try {
+        sessionStorage.setItem("rangka-cakupan", layanan);
+      } catch {
+        /* abaikan */
+      }
       if (umumkan) setStatus(`Dipilih: ${layanan} — template sudah terisi, tinggal salin.`);
     };
+    try {
+      const tersimpan = sessionStorage.getItem("rangka-cakupan");
+      if (tersimpan) pilihCakupan(tersimpan, false);
+    } catch {
+      /* abaikan */
+    }
     cakupanInputs.forEach((input) => {
       input.addEventListener("change", () => {
         if (input.checked) pilihCakupan(input.value, true);
