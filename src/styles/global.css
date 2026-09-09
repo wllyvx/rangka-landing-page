@@ -32,6 +32,16 @@
   --color-night-muted: #e9e2d8;
   --color-night-faint: #c9c2b8;
 
+  /* illustration palette — oak/linen/kapur for SVG artwork + swatches.
+     UI chrome must use tokens above; artwork below is intentional literal
+     mapped here so palette changes stay in one place. See DESIGN.md. */
+  --color-oak: #d9b98f;
+  --color-oak-line: #b68f5e;
+  --color-oak-deep: #8a6a3e;
+  --color-sage-mid: #8b9a7b;
+  --color-kapur: #f4efe8;
+  --color-paper-bright: #fffdfb;
+
   --font-display: "Bitter", "Georgia", serif;
   --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
@@ -60,7 +70,8 @@ body {
 :focus-visible {
   outline: 3px solid var(--color-gold);
   outline-offset: 3px;
-  border-radius: 4px;
+  /* no border-radius here — outline follows the element's native radius
+     so pills (rounded-full) keep a pill outline, cards keep theirs */
 }
 
 .glow-kontak :focus-visible {

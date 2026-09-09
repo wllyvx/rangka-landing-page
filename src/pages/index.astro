@@ -85,6 +85,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Visual utama: ilustrasi ruang, bukan foto proyek -->
+        <!-- illustration-palette: intentional literal — SVG artwork hex maps to --color-oak / --color-sage-mid / --color-kapur / --color-paper-bright in global.css, see DESIGN.md -->
         <figure class="reveal relative" style="--reveal-delay:120ms" aria-labelledby="ruang-caption">
           <div class="overflow-hidden rounded-3xl border border-line bg-card shadow-[0_32px_64px_-32px_rgba(28,25,23,0.35)]">
             <svg viewBox="0 0 560 430" role="img" aria-labelledby="ruang-title ruang-desc" class="block h-auto w-full">
@@ -132,9 +133,9 @@ import Layout from "../layouts/Layout.astro";
             </svg>
             <div class="flex flex-wrap items-center justify-between gap-3 border-t border-line px-5 py-4">
               <span class="flex items-center gap-2" aria-hidden="true">
-                <span class="h-7 w-7 rounded-md border border-line-strong bg-[#d9b98f]"></span>
-                <span class="h-7 w-7 rounded-md border border-sage-line bg-[#8b9a7b]"></span>
-                <span class="h-7 w-7 rounded-md border border-line-strong bg-[#f4efe8]"></span>
+                <span class="h-7 w-7 rounded-md border border-line-strong bg-oak"></span>
+                <span class="h-7 w-7 rounded-md border border-sage-line bg-sage-mid"></span>
+                <span class="h-7 w-7 rounded-md border border-line-strong bg-kapur"></span>
                 <span class="ml-1 text-[13px] font-medium text-muted-ink">oak · sage · kapur</span>
               </span>
               <figcaption id="ruang-caption" class="text-[13px] leading-5 text-muted-ink">
@@ -182,11 +183,11 @@ import Layout from "../layouts/Layout.astro";
               </dd>
             </div>
             <div class="rounded-2xl border border-line bg-card p-5">
-              <p class="text-[12px] font-semibold tracking-wide text-muted-ink">PALET CONTOH</p>
+              <p class="text-[13px] font-semibold tracking-wide text-muted-ink">PALET CONTOH</p>
               <div class="mt-3 flex items-center gap-2.5" aria-hidden="true">
-                <span class="h-10 w-10 rounded-lg border border-line-strong bg-[#d9b98f]"></span>
+                <span class="h-10 w-10 rounded-lg border border-line-strong bg-oak"></span>
                 <span class="h-10 w-10 rounded-lg border border-sage-line bg-sage-soft"></span>
-                <span class="h-10 w-10 rounded-lg border border-line bg-[#f4efe8]"></span>
+                <span class="h-10 w-10 rounded-lg border border-line bg-kapur"></span>
               </div>
               <p class="mt-3 text-[13px] leading-5 text-muted-ink">oak · sage · kapur — menyertai denah</p>
             </div>
@@ -215,7 +216,7 @@ import Layout from "../layouts/Layout.astro";
               </dd>
             </div>
             <div class="rounded-2xl border border-line bg-card p-5">
-              <p class="text-[12px] font-semibold tracking-wide text-muted-ink">DENAH CONTOH</p>
+              <p class="text-[13px] font-semibold tracking-wide text-muted-ink">DENAH CONTOH</p>
               <svg viewBox="0 0 280 140" class="mt-3 h-auto w-full" aria-hidden="true">
                 <rect x="18" y="18" width="244" height="104" fill="none" stroke="#1c1917" stroke-width="2.5" />
                 <path d="M18 60h244M100 18v104M182 18v104" stroke="#c8cfb8" stroke-width="1.5" />
@@ -250,7 +251,7 @@ import Layout from "../layouts/Layout.astro";
               </dd>
             </div>
             <div class="rounded-2xl border border-line bg-card p-5">
-              <p class="text-[12px] font-semibold tracking-wide text-muted-ink">PERUBAHAN KECIL</p>
+              <p class="text-[13px] font-semibold tracking-wide text-muted-ink">PERUBAHAN KECIL</p>
               <ul class="mt-2 text-sm leading-6 text-ink-soft" aria-label="Contoh perubahan kecil">
                 <li class="flex gap-2.5 py-1"><svg width="16" height="16" viewBox="0 0 16 16" class="mt-1 shrink-0" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5" stroke="#4f5d46" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Sofa ke sisi cahaya pagi</li>
                 <li class="flex gap-2.5 py-1"><svg width="16" height="16" viewBox="0 0 16 16" class="mt-1 shrink-0" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5" stroke="#4f5d46" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Rak tinggi, bukan lemari baru</li>
@@ -282,7 +283,7 @@ import Layout from "../layouts/Layout.astro";
               </dd>
             </div>
             <div class="rounded-2xl border border-line bg-card p-5">
-              <p class="text-[12px] font-semibold tracking-wide text-muted-ink">DAFTAR KURASI · CONTOH</p>
+              <p class="text-[13px] font-semibold tracking-wide text-muted-ink">DAFTAR KURASI · CONTOH</p>
               <ul class="mt-2 space-y-1.5 text-sm leading-6 text-ink-soft">
                 <li class="flex justify-between gap-4"><span>Kursi kayu</span><span class="tnum text-muted-ink">6</span></li>
                 <li class="flex justify-between gap-4"><span>Linen natural</span><span class="tnum text-muted-ink">2 set</span></li>
@@ -306,6 +307,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Momen material: satu detail besar yang hangat -->
+        <!-- illustration-palette: intentional literal — see note above, tokens in global.css + DESIGN.md -->
         <figure class="reveal mt-12 overflow-hidden rounded-3xl border border-line bg-card shadow-[0_32px_64px_-32px_rgba(28,25,23,0.35)]">
           <svg viewBox="0 0 600 300" class="block h-auto w-full" role="img" aria-labelledby="material-title material-desc">
             <title id="material-title">Detail material contoh: serat kayu, tenun linen, cahaya pagi</title>
@@ -345,8 +347,8 @@ import Layout from "../layouts/Layout.astro";
           </svg>
           <figcaption class="flex flex-wrap items-center justify-between gap-3 border-t border-line px-5 py-4 sm:px-7">
             <span class="flex items-center gap-2" aria-hidden="true">
-              <span class="h-7 w-7 rounded-md border border-line-strong bg-[#d9b98f]"></span>
-              <span class="h-7 w-7 rounded-md border border-line bg-[#f4efe8]"></span>
+              <span class="h-7 w-7 rounded-md border border-line-strong bg-oak"></span>
+              <span class="h-7 w-7 rounded-md border border-line bg-kapur"></span>
               <span class="h-7 w-7 rounded-md border border-gold-line bg-gold-soft"></span>
               <span class="ml-1 text-[13px] font-medium text-muted-ink">serat oak · tenun linen · cahaya pagi</span>
             </span>
@@ -366,7 +368,7 @@ import Layout from "../layouts/Layout.astro";
               <path d="M150 23V10" stroke="#1c1917" stroke-width="1.8" />
             </svg>
             <figcaption class="flex items-center justify-between px-4 py-3 text-sm">
-              <span class="font-semibold">Kamar</span><span class="text-[12px] font-semibold tracking-wide text-muted-ink">ILUSTRASI</span>
+              <span class="font-semibold">Kamar</span><span class="text-[13px] font-semibold tracking-wide text-muted-ink">ILUSTRASI</span>
             </figcaption>
           </figure>
           <figure class="reveal overflow-hidden rounded-2xl border border-line bg-card" style="--reveal-delay:80ms">
@@ -380,7 +382,7 @@ import Layout from "../layouts/Layout.astro";
               <rect x="190" y="100" width="60" height="16" rx="4" fill="#f7e8d3" stroke="#92400e" stroke-width="1.6" />
             </svg>
             <figcaption class="flex items-center justify-between px-4 py-3 text-sm">
-              <span class="font-semibold">Dapur</span><span class="text-[12px] font-semibold tracking-wide text-muted-ink">ILUSTRASI</span>
+              <span class="font-semibold">Dapur</span><span class="text-[13px] font-semibold tracking-wide text-muted-ink">ILUSTRASI</span>
             </figcaption>
           </figure>
         </div>
@@ -474,19 +476,19 @@ import Layout from "../layouts/Layout.astro";
 
         <div class="reveal mt-12 grid gap-6 sm:grid-cols-3" style="--reveal-delay:80ms" role="region" aria-label="Situasi contoh ilustratif">
           <figure class="flex flex-col rounded-2xl border border-line bg-card p-6 sm:p-7">
-            <p class="text-[12px] font-semibold tracking-wide text-muted-ink">SITUASI 1 · APARTEMEN</p>
+            <p class="text-[13px] font-semibold tracking-wide text-muted-ink">SITUASI 1 · APARTEMEN</p>
             <p class="mt-3 text-[15px] font-semibold leading-7">Butuh: zonasi tanpa renovasi besar.</p>
             <p class="mt-2 flex-1 text-[15px] leading-7 text-ink-soft">Denah dipisah jadi area kerja dan istirahat, tiap perubahan tercatat di denah berskala sehingga tidak ada tebakan di tengah jalan.</p>
             <figcaption class="mt-5 border-t border-line pt-4 text-sm leading-6 text-muted-ink">Hasil: zonasi baru, tanpa bongkar.</figcaption>
           </figure>
           <figure class="flex flex-col rounded-2xl border border-line bg-card p-6 sm:p-7">
-            <p class="text-[12px] font-semibold tracking-wide text-muted-ink">SITUASI 2 · RUMAH</p>
+            <p class="text-[13px] font-semibold tracking-wide text-muted-ink">SITUASI 2 · RUMAH</p>
             <p class="mt-3 text-[15px] font-semibold leading-7">Butuh: keputusan selesai sebelum pasang.</p>
             <p class="mt-2 flex-1 text-[15px] leading-7 text-ink-soft">Ukuran, titik listrik, dan urutan pasang ditulis rapi dalam satu paket.</p>
             <figcaption class="mt-5 border-t border-line pt-4 text-sm leading-6 text-muted-ink">Hasil: paket terukur + daftar belanja.</figcaption>
           </figure>
           <figure class="flex flex-col rounded-2xl border border-line bg-card p-6 sm:p-7">
-            <p class="text-[12px] font-semibold tracking-wide text-muted-ink">SITUASI 3 · KAMAR TIDUR</p>
+            <p class="text-[13px] font-semibold tracking-wide text-muted-ink">SITUASI 3 · KAMAR TIDUR</p>
             <p class="mt-3 text-[15px] font-semibold leading-7">Butuh: mudah dirawat, tanpa janji merek.</p>
             <p class="mt-2 flex-1 text-[15px] leading-7 text-ink-soft">Kayu terang dan kain natural dikurasi dengan alternatif harga dan catatan rawat, jadi pilihan bisa dibandingkan dengan tenang sebelum memutuskan.</p>
             <figcaption class="mt-5 border-t border-line pt-4 text-sm leading-6 text-muted-ink">Hasil: daftar kurasi + alternatif.</figcaption>
@@ -545,7 +547,7 @@ import Layout from "../layouts/Layout.astro";
                 Contoh portofolio — tidak mengirim ke mana pun. Salin template, tempel di aplikasi chat pilihan Anda.
               </p>
               <div class="mt-5 rounded-xl border border-night-line bg-night p-4" role="group" aria-labelledby="template-judul">
-                <p id="template-judul" class="text-[12px] font-semibold tracking-wide text-night-faint">TEMPLATE CHAT · KETUK SALIN</p>
+                <p id="template-judul" class="text-[13px] font-semibold tracking-wide text-night-faint">TEMPLATE CHAT</p>
                 <p id="template-chat" class="mt-2 text-sm leading-6 break-words text-night-muted">
                   Halo Rangka, saya ingin konsultasi. Hunian saya [rumah/apartemen, ±__ m², __ ruang]. Kebutuhan: [mis. zonasi ruang tamu + penyimpanan]. Bisa info jadwal + rentang biaya awal? Terima kasih.
                 </p>
