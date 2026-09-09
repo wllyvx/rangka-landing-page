@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #faf5f2;
+  --color-cream-deep: #f3ebe1;
+  --color-card: #ffffff;
+  --color-ink: #1c1917;
+  --color-ink-soft: #44403c;
+  --color-muted-ink: #57534e;
+  --color-line: #e7e0d9;
+  --color-line-strong: #d6cdbf;
+  --color-stone-warm: #78716c;
+  --color-gold: #92400e;
+  --color-gold-deep: #7c360b;
+  --color-gold-soft: #f7e8d3;
+  --color-gold-line: #e3c99b;
+  --color-gold-wash: #fbf1e2;
+  --color-sage: #4f5d46;
+  --color-sage-deep: #3d4837;
+  --color-sage-soft: #e8ebe0;
+  --color-sage-line: #c8cfb8;
+  --color-sage-wash: #f0f2e9;
+  --color-clay: #9a3f1f;
+  --color-clay-deep: #7f3319;
+  --color-clay-soft: #fbe7d6;
+  --color-clay-line: #eabd97;
+  --color-clay-wash: #fdf0e3;
+  --color-night: #1c1917;
+  --color-night-soft: #292524;
+  --color-night-line: #57534e;
+  --color-night-ink: #faf5f2;
+  --color-night-muted: #e9e2d8;
+  --color-night-faint: #c9c2b8;
+
+  --font-display: "Bitter", "Georgia", serif;
+  --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-gold-soft);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+a {
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+
+/* tabular numerals for process + measurements */
+.tnum {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* thin warm scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line-strong) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--color-line-strong);
+  border-radius: 8px;
+  border: 2px solid var(--color-paper);
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ---- signature: one continuous spine ---- */
+.spine-rail {
+  background: linear-gradient(180deg, var(--color-line), var(--color-sage-line));
+}
+.spine-fill {
+  background: linear-gradient(180deg, var(--color-sage), var(--color-clay) 52%, var(--color-gold));
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.2s linear;
+}
+
+/* ---- strategic color washes: hierarchy + atmosphere, not decoration ---- */
+.wash-hero {
+  background:
+    radial-gradient(44rem 22rem at 88% -6%, var(--color-gold-wash) 0%, rgba(251, 241, 226, 0) 62%),
+    radial-gradient(36rem 20rem at -8% 22%, var(--color-sage-wash) 0%, rgba(240, 242, 233, 0) 60%),
+    var(--color-paper);
+}
+.wash-proses {
+  background:
+    radial-gradient(40rem 18rem at 100% 0%, var(--color-sage-wash) 0%, rgba(240, 242, 233, 0) 58%),
+    radial-gradient(34rem 16rem at 0% 100%, var(--color-gold-wash) 0%, rgba(251, 241, 226, 0) 60%),
+    var(--color-card);
+}
+.glow-kontak {
+  background:
+    radial-gradient(28rem 14rem at 12% 0%, rgba(217, 185, 143, 0.22) 0%, rgba(217, 185, 143, 0) 62%),
+    radial-gradient(26rem 14rem at 96% 100%, rgba(139, 154, 123, 0.2) 0%, rgba(139, 154, 123, 0) 60%),
+    var(--color-night);
+}
+
+/* ---- single reveal system ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .spine-fill {
+    transform: scaleY(1);
+    transition: none;
+  }
+}

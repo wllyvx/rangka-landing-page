@@ -1,0 +1,629 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Rangka — Studio Interior Hunian"
+  description="Rangka adalah studio interior fiktif untuk rumah dan apartemen Skandinavia/kontemporer. Konsultasi, konsep, hingga instalasi dalam satu alur transparan."
+>
+  <!-- Header -->
+  <header class="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur-sm">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
+      <a href="#atas" class="flex min-h-11 items-center gap-2.5 rounded-lg" aria-label="Rangka — ke atas">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="27" height="27" rx="7" stroke="#1c1917" stroke-width="2" />
+          <path d="M9 20V10h5.2c2.1 0 3.6 1.2 3.6 3 0 1.3-.8 2.3-2 2.7L18.5 20h-2.6l-2.4-4H11v4H9Zm2-5.6h3c1 0 1.7-.6 1.7-1.4 0-.9-.7-1.4-1.7-1.4h-3v2.8Z" fill="#1c1917" />
+          <circle cx="21" cy="21" r="2.6" fill="#92400e" />
+        </svg>
+        <span class="font-display text-xl font-semibold tracking-tight">Rangka</span>
+      </a>
+      <nav class="hidden items-center gap-1 md:flex" aria-label="Navigasi utama">
+        <a href="#layanan" class="min-h-11 rounded-lg px-4 py-2.5 text-[15px] font-medium text-ink-soft transition-colors hover:bg-gold-soft hover:text-ink">Layanan</a>
+        <a href="#gaya" class="min-h-11 rounded-lg px-4 py-2.5 text-[15px] font-medium text-ink-soft transition-colors hover:bg-gold-soft hover:text-ink">Gaya</a>
+        <a href="#proses" class="min-h-11 rounded-lg px-4 py-2.5 text-[15px] font-medium text-ink-soft transition-colors hover:bg-gold-soft hover:text-ink">Proses</a>
+        <a href="#kontak" class="min-h-11 rounded-lg px-4 py-2.5 text-[15px] font-medium text-ink-soft transition-colors hover:bg-gold-soft hover:text-ink">Kontak</a>
+      </nav>
+      <a
+        href="#kontak"
+        class="inline-flex min-h-11 items-center rounded-full bg-ink px-5 py-2.5 text-[15px] font-semibold text-paper transition-colors duration-200 hover:bg-night-soft"
+      >
+        Konsultasi
+      </a>
+    </div>
+  </header>
+
+  <main id="konten">
+    <!-- Hero -->
+    <section id="atas" aria-labelledby="judul-hero" class="wash-hero relative overflow-hidden">
+      <div class="mx-auto grid max-w-6xl gap-12 px-5 pt-16 pb-20 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-16 lg:pt-28 lg:pb-28">
+        <div>
+          <h1 id="judul-hero" class="reveal font-display max-w-[20ch] text-4xl leading-[1.06] font-semibold tracking-[-0.02em] text-balance sm:text-5xl lg:text-[3.8rem]">
+            Hunian rapi dan tenang, sampai instalasi.
+          </h1>
+          <p class="reveal mt-5 max-w-[44ch] text-base leading-7 text-muted-ink sm:text-lg sm:leading-8" style="--reveal-delay:80ms">
+            Studio interior fiktif untuk rumah &amp; apartemen Skandinavia/kontemporer.
+          </p>
+          <div class="reveal mt-8 flex flex-wrap items-center gap-3" style="--reveal-delay:140ms">
+            <a
+              href="#kontak"
+              class="inline-flex min-h-11 items-center gap-2 rounded-full bg-ink px-6 py-3 text-[15px] font-semibold text-paper transition-colors duration-200 hover:bg-night-soft"
+            >
+              Mulai konsultasi
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a
+              href="#proses"
+              class="inline-flex min-h-11 items-center rounded-full border border-line-strong bg-card px-6 py-3 text-[15px] font-semibold text-ink transition-colors duration-200 hover:border-gold-line hover:bg-gold-soft"
+            >
+              Lihat cara kerja
+            </a>
+          </div>
+          <div class="reveal mt-8 flex flex-wrap items-center gap-2" style="--reveal-delay:200ms">
+            <span class="inline-flex items-center gap-2 rounded-full border border-line bg-card px-4 py-2 text-[13px] leading-5 text-muted-ink">
+              <span class="inline-block h-2 w-2 rounded-full bg-gold" aria-hidden="true"></span>
+              Studio fiktif — contoh portofolio
+            </span>
+            <span class="inline-flex items-center rounded-full border border-sage-line bg-sage-soft px-3.5 py-2 text-[13px] font-medium text-ink">Konsep → instalasi</span>
+          </div>
+        </div>
+
+        <!-- Visual utama: ilustrasi ruang, bukan foto proyek -->
+        <figure class="reveal relative" style="--reveal-delay:120ms" aria-labelledby="ruang-caption">
+          <div class="overflow-hidden rounded-3xl border border-line bg-card shadow-[0_32px_64px_-32px_rgba(28,25,23,0.35)]">
+            <svg viewBox="0 0 560 430" role="img" aria-labelledby="ruang-title ruang-desc" class="block h-auto w-full">
+              <title id="ruang-title">Ilustrasi contoh ruang tamu Skandinavia</title>
+              <desc id="ruang-desc">Ruang tamu terang dengan sofa kain, meja kayu, karpet, lampu gantung, jendela, rak, dan tanaman.</desc>
+              <rect x="0" y="0" width="560" height="290" fill="#f3ebe1" />
+              <rect x="0" y="290" width="560" height="140" fill="#d9b98f" />
+              <g stroke="#b68f5e" stroke-width="1.5" opacity="0.7">
+                <path d="M0 318h560M0 348h560M0 378h560M0 408h560" />
+              </g>
+              <!-- jendela + cahaya -->
+              <rect x="48" y="36" width="132" height="196" rx="6" fill="#fffdfb" stroke="#1c1917" stroke-width="2.5" />
+              <path d="M114 36v196M48 134h132" stroke="#1c1917" stroke-width="1.8" />
+              <path d="M180 60 320 260 180 260Z" fill="#ffffff" opacity="0.45" />
+              <!-- wall art -->
+              <rect x="232" y="52" width="86" height="108" rx="6" fill="#fffdfb" stroke="#1c1917" stroke-width="2" />
+              <path d="M246 130c8-22 20-30 30-44 8 12 18 18 28 26v32H246Z" fill="#8b9a7b" opacity="0.85" />
+              <circle cx="266" cy="84" r="10" fill="#f7e8d3" stroke="#92400e" stroke-width="1.5" />
+              <!-- rak -->
+              <rect x="348" y="120" width="156" height="10" rx="3" fill="#1c1917" />
+              <rect x="360" y="92" width="22" height="28" rx="4" fill="#fbe7d6" stroke="#9a3f1f" stroke-width="1.5" />
+              <rect x="390" y="100" width="30" height="20" rx="2" fill="#4f5d46" />
+              <path d="M436 120c-2-14 4-20 0-30m0 30c8-4 12-10 14-18" stroke="#3d4837" stroke-width="1.8" stroke-linecap="round" />
+              <!-- lampu gantung -->
+              <path d="M300 0v44" stroke="#1c1917" stroke-width="2" />
+              <path d="M274 44h52l10 30H264Z" fill="#f7e8d3" stroke="#92400e" stroke-width="2" />
+              <ellipse cx="300" cy="82" rx="8" ry="5" fill="#92400e" />
+              <!-- sofa -->
+              <ellipse cx="280" cy="352" rx="150" ry="20" fill="#1c1917" opacity="0.08" />
+              <rect x="148" y="196" width="248" height="86" rx="14" fill="#f4efe8" stroke="#1c1917" stroke-width="2.5" />
+              <rect x="148" y="196" width="40" height="86" rx="14" fill="#e9e2d8" stroke="#1c1917" stroke-width="2" />
+              <rect x="356" y="196" width="40" height="86" rx="14" fill="#e9e2d8" stroke="#1c1917" stroke-width="2" />
+              <path d="M208 216v44M272 216v44" stroke="#d6cdbf" stroke-width="2" />
+              <rect x="168" y="222" width="52" height="40" rx="10" fill="#fbe7d6" stroke="#9a3f1f" stroke-width="1.8" />
+              <rect x="320" y="222" width="52" height="40" rx="10" fill="#e8ebe0" stroke="#4f5d46" stroke-width="1.8" />
+              <!-- meja + rug -->
+              <ellipse cx="280" cy="356" rx="132" ry="20" fill="#fffdfb" stroke="#e7e0d9" stroke-width="2" />
+              <rect x="196" y="306" width="168" height="14" rx="7" fill="#fffdfb" stroke="#1c1917" stroke-width="2" />
+              <path d="M210 320v22m140-22v22" stroke="#1c1917" stroke-width="2.5" />
+              <rect x="248" y="282" width="26" height="24" rx="4" fill="#8b9a7b" />
+              <rect x="280" y="290" width="40" height="16" rx="2" fill="#1c1917" />
+              <!-- tanaman -->
+              <rect x="448" y="252" width="44" height="52" rx="8" fill="#fbf1e2" stroke="#92400e" stroke-width="2" />
+              <path d="M470 252c-2-18 6-28 0-42m0 42c2-16-6-26 0-40m0 40c-12-4-20-14-22-26m22 26c12-4 20-14 22-26" stroke="#3d4837" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <div class="flex flex-wrap items-center justify-between gap-3 border-t border-line px-5 py-4">
+              <span class="flex items-center gap-2" aria-hidden="true">
+                <span class="h-7 w-7 rounded-md border border-line-strong bg-[#d9b98f]"></span>
+                <span class="h-7 w-7 rounded-md border border-sage-line bg-[#8b9a7b]"></span>
+                <span class="h-7 w-7 rounded-md border border-line-strong bg-[#f4efe8]"></span>
+                <span class="ml-1 text-[13px] font-medium text-muted-ink">oak · sage · kapur</span>
+              </span>
+              <figcaption id="ruang-caption" class="text-[13px] leading-5 text-muted-ink">
+                Ilustrasi contoh — bukan foto proyek nyata.
+              </figcaption>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan" aria-labelledby="judul-layanan" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+        <div class="max-w-[60ch]">
+          <h2 id="judul-layanan" class="reveal font-display text-3xl font-semibold tracking-[-0.015em] text-balance sm:text-4xl lg:text-[2.9rem] lg:leading-[1.1]">
+            Layanan untuk hunian.
+          </h2>
+          <p class="reveal mt-4 max-w-[48ch] text-base leading-7 text-muted-ink sm:text-lg sm:leading-8">
+            Empat cakupan. Ambil terpisah atau berurutan.
+          </p>
+        </div>
+
+        <dl class="mt-14 divide-y divide-line border-y border-line">
+          <div class="reveal grid gap-6 py-10 lg:grid-cols-[56px_1fr_280px] lg:items-center lg:gap-10">
+            <span class="hidden h-14 w-14 items-center justify-center rounded-2xl border border-gold-line bg-gold-wash lg:inline-flex" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 16c2-5 5-8 10-9l4-1-1 4c-1 5-4 8-9 10l-4-4Z" stroke="#92400e" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="14" r="1.6" fill="#92400e"/><circle cx="13" cy="11" r="1.6" fill="#92400e"/></svg>
+            </span>
+            <div>
+              <dt class="font-display text-xl font-semibold sm:text-2xl">Desain konsep hunian</dt>
+              <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Denah, suasana, dan palet material yang bisa dibaca tukang.</dd>
+              <dd class="mt-3"><span class="inline-flex items-center rounded-full border border-line bg-paper px-3.5 py-1.5 text-[13px] font-medium text-ink-soft">Hasil: denah + daftar material</span></dd>
+              <dd class="mt-4">
+                <a
+                  href="#kontak"
+                  data-layanan="Desain konsep hunian"
+                  class="inline-flex min-h-11 items-center gap-2 rounded-lg px-1 py-2 text-[14px] font-semibold text-gold-deep underline decoration-gold-line decoration-2 underline-offset-4 transition-colors hover:text-ink"
+                  aria-label="Tanya tentang Desain konsep hunian — ke kontak"
+                >
+                  Tanya tentang Desain konsep hunian
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </dd>
+            </div>
+            <div class="flex items-center gap-2.5 rounded-2xl border border-gold-line bg-gold-wash p-4" aria-hidden="true">
+              <span class="h-10 w-10 rounded-lg border border-gold-line bg-gold-soft"></span>
+              <span class="h-10 w-10 rounded-lg border border-sage-line bg-sage-soft"></span>
+              <span class="h-10 w-10 rounded-lg bg-[#d9b98f]"></span>
+              <span class="text-[13px] font-medium text-muted-ink">oak · sage<br />kapur</span>
+            </div>
+          </div>
+
+          <div class="reveal grid gap-6 py-10 lg:grid-cols-[280px_56px_1fr] lg:items-center lg:gap-10">
+            <svg viewBox="0 0 280 140" class="h-auto w-full rounded-2xl border border-sage-line bg-sage-wash p-3" aria-hidden="true">
+              <rect x="18" y="18" width="244" height="104" fill="none" stroke="#1c1917" stroke-width="2.5" />
+              <path d="M18 60h244M100 18v104M182 18v104" stroke="#c8cfb8" stroke-width="1.5" />
+              <rect x="28" y="70" width="56" height="32" fill="#fbe7d6" stroke="#9a3f1f" stroke-width="2" />
+              <circle cx="140" cy="42" r="5" fill="#92400e" />
+              <path d="M196 96h44" stroke="#4f5d46" stroke-width="1.8" />
+            </svg>
+            <span class="hidden h-14 w-14 items-center justify-center rounded-2xl border border-sage-line bg-sage-wash lg:inline-flex" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 17 17 3l4 4L7 21H3v-4Z" stroke="#4f5d46" stroke-width="1.8" stroke-linejoin="round"/><path d="M13 7l4 4" stroke="#4f5d46" stroke-width="1.8"/></svg>
+            </span>
+            <div>
+              <dt class="font-display text-xl font-semibold sm:text-2xl">Gambar kerja + pendampingan</dt>
+              <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Ukuran, titik listrik, dan urutan pasang yang jelas.</dd>
+              <dd class="mt-3"><span class="inline-flex items-center rounded-full border border-line bg-paper px-3.5 py-1.5 text-[13px] font-medium text-ink-soft">Hasil: paket terukur</span></dd>
+              <dd class="mt-4">
+                <a
+                  href="#kontak"
+                  data-layanan="Gambar kerja + pendampingan"
+                  class="inline-flex min-h-11 items-center gap-2 rounded-lg px-1 py-2 text-[14px] font-semibold text-gold-deep underline decoration-gold-line decoration-2 underline-offset-4 transition-colors hover:text-ink"
+                  aria-label="Tanya tentang Gambar kerja + pendampingan — ke kontak"
+                >
+                  Tanya tentang Gambar kerja + pendampingan
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </dd>
+            </div>
+          </div>
+
+          <div class="reveal grid gap-6 py-10 lg:grid-cols-[56px_1fr_280px] lg:items-center lg:gap-10">
+            <span class="hidden h-14 w-14 items-center justify-center rounded-2xl border border-clay-line bg-clay-wash lg:inline-flex" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 9h13l-3-3M20 15H7l3 3" stroke="#9a3f1f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <dt class="font-display text-xl font-semibold sm:text-2xl">Penataan ulang tanpa bongkar</dt>
+              <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Zonasi, cahaya, dan penyimpanan untuk ruang yang sudah dihuni.</dd>
+              <dd class="mt-3"><span class="inline-flex items-center rounded-full border border-line bg-paper px-3.5 py-1.5 text-[13px] font-medium text-ink-soft">Hasil: zonasi baru, tanpa renovasi besar</span></dd>
+              <dd class="mt-4">
+                <a
+                  href="#kontak"
+                  data-layanan="Penataan ulang tanpa bongkar"
+                  class="inline-flex min-h-11 items-center gap-2 rounded-lg px-1 py-2 text-[14px] font-semibold text-gold-deep underline decoration-gold-line decoration-2 underline-offset-4 transition-colors hover:text-ink"
+                  aria-label="Tanya tentang Penataan ulang tanpa bongkar — ke kontak"
+                >
+                  Tanya tentang Penataan ulang tanpa bongkar
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </dd>
+            </div>
+            <ul class="rounded-2xl border border-sage-line bg-sage-wash p-5 text-sm leading-6 text-ink-soft" aria-label="Contoh perubahan kecil">
+              <li class="flex gap-2.5 py-1"><svg width="16" height="16" viewBox="0 0 16 16" class="mt-1 shrink-0" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5" stroke="#4f5d46" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Sofa ke sisi cahaya pagi</li>
+              <li class="flex gap-2.5 py-1"><svg width="16" height="16" viewBox="0 0 16 16" class="mt-1 shrink-0" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5" stroke="#4f5d46" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Rak tinggi, bukan lemari baru</li>
+              <li class="flex gap-2.5 py-1"><svg width="16" height="16" viewBox="0 0 16 16" class="mt-1 shrink-0" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5" stroke="#4f5d46" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Pisah area kerja &amp; istirahat</li>
+            </ul>
+          </div>
+
+          <div class="reveal grid gap-6 py-10 lg:grid-cols-[280px_56px_1fr] lg:items-center lg:gap-10">
+            <div class="rounded-2xl border border-night-line bg-night p-5 text-paper" aria-hidden="true">
+              <p class="text-[12px] font-semibold tracking-wide text-gold-soft">DAFTAR KURASI · CONTOH</p>
+              <ul class="mt-2 space-y-1.5 text-sm leading-6">
+                <li class="flex justify-between gap-4"><span>Kursi kayu</span><span class="tnum text-gold-soft">6</span></li>
+                <li class="flex justify-between gap-4"><span>Linen natural</span><span class="tnum text-sage-soft">2 set</span></li>
+                <li class="flex justify-between gap-4"><span>Lampu hangat</span><span class="tnum text-clay-soft">1</span></li>
+              </ul>
+            </div>
+            <span class="hidden h-14 w-14 items-center justify-center rounded-2xl border border-line bg-card lg:inline-flex" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v5l-9 9H4v-7l9-9" stroke="#1c1917" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="10" r="1.6" fill="#1c1917"/></svg>
+            </span>
+            <div>
+              <dt class="font-display text-xl font-semibold sm:text-2xl">Kurasi material &amp; furnitur</dt>
+              <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Kayu terang, kain natural, mudah dirawat — plus alternatif.</dd>
+              <dd class="mt-3"><span class="inline-flex items-center rounded-full border border-line bg-paper px-3.5 py-1.5 text-[13px] font-medium text-ink-soft">Tanpa janji merek / harga pasti</span></dd>
+              <dd class="mt-4">
+                <a
+                  href="#kontak"
+                  data-layanan="Kurasi material & furnitur"
+                  class="inline-flex min-h-11 items-center gap-2 rounded-lg px-1 py-2 text-[14px] font-semibold text-gold-deep underline decoration-gold-line decoration-2 underline-offset-4 transition-colors hover:text-ink"
+                  aria-label="Tanya tentang Kurasi material dan furnitur — ke kontak"
+                >
+                  Tanya tentang Kurasi material &amp; furnitur
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </dd>
+            </div>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Gaya: galeri + before/after, tanpa paragraf panjang -->
+    <section id="gaya" aria-labelledby="judul-gaya" class="wash-proses border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+        <div class="flex flex-wrap items-end justify-between gap-6">
+          <h2 id="judul-gaya" class="reveal font-display max-w-[18ch] text-3xl font-semibold tracking-[-0.015em] text-balance sm:text-4xl lg:text-[2.9rem] lg:leading-[1.1]">
+            Terang, kayu, kain natural.
+          </h2>
+          <p class="reveal max-w-[36ch] text-[15px] leading-7 text-muted-ink">Tiga contoh suasana. Semua ilustrasi — bukan foto proyek.</p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-3">
+          <figure class="reveal overflow-hidden rounded-2xl border border-line bg-card shadow-[0_20px_40px_-28px_rgba(28,25,23,0.4)]">
+            <svg viewBox="0 0 300 200" class="block h-auto w-full" aria-hidden="true">
+              <rect width="300" height="130" fill="#f3ebe1" /><rect y="130" width="300" height="70" fill="#d9b98f" />
+              <rect x="40" y="60" width="110" height="70" rx="10" fill="#f4efe8" stroke="#1c1917" stroke-width="2" />
+              <rect x="160" y="96" width="100" height="34" rx="6" fill="#fff" stroke="#1c1917" stroke-width="2" />
+              <circle cx="232" cy="52" r="14" fill="#f7e8d3" stroke="#92400e" stroke-width="2" />
+              <path d="M232 38v-14" stroke="#1c1917" stroke-width="2" />
+            </svg>
+            <figcaption class="flex items-center justify-between px-4 py-3 text-sm"><span class="font-semibold">Ruang tamu</span><span class="text-muted-ink">cahaya pagi</span></figcaption>
+          </figure>
+          <figure class="reveal overflow-hidden rounded-2xl border border-line bg-card shadow-[0_20px_40px_-28px_rgba(28,25,23,0.4)]" style="--reveal-delay:80ms">
+            <svg viewBox="0 0 300 200" class="block h-auto w-full" aria-hidden="true">
+              <rect width="300" height="130" fill="#f0f2e9" /><rect y="130" width="300" height="70" fill="#e9e2d8" />
+              <rect x="50" y="90" width="200" height="50" rx="10" fill="#fffdfb" stroke="#1c1917" stroke-width="2" />
+              <rect x="50" y="66" width="200" height="28" rx="8" fill="#e8ebe0" stroke="#4f5d46" stroke-width="2" />
+              <rect x="70" y="74" width="50" height="14" rx="5" fill="#fff" /><rect x="180" y="74" width="50" height="14" rx="5" fill="#fff" />
+            </svg>
+            <figcaption class="flex items-center justify-between px-4 py-3 text-sm"><span class="font-semibold">Kamar</span><span class="text-muted-ink">linen + sage</span></figcaption>
+          </figure>
+          <figure class="reveal overflow-hidden rounded-2xl border border-line bg-card shadow-[0_20px_40px_-28px_rgba(28,25,23,0.4)]" style="--reveal-delay:140ms">
+            <svg viewBox="0 0 300 200" class="block h-auto w-full" aria-hidden="true">
+              <rect width="300" height="130" fill="#faf5f2" /><rect y="130" width="300" height="70" fill="#d9b98f" />
+              <rect x="30" y="50" width="240" height="80" rx="8" fill="#fff" stroke="#1c1917" stroke-width="2" />
+              <path d="M30 84h240" stroke="#e7e0d9" stroke-width="2" />
+              <rect x="48" y="60" width="40" height="14" rx="4" fill="#e8ebe0" /><rect x="190" y="100" width="60" height="16" rx="4" fill="#f7e8d3" stroke="#92400e" />
+            </svg>
+            <figcaption class="flex items-center justify-between px-4 py-3 text-sm"><span class="font-semibold">Dapur</span><span class="text-muted-ink">oak + kapur</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="reveal mt-6 overflow-hidden rounded-2xl border border-line bg-card">
+          <div class="grid sm:grid-cols-2">
+            <div class="bg-[#e9e2d8] p-6 sm:p-8">
+              <p class="text-[13px] font-semibold tracking-wide text-ink-soft">SEBELUM · ILUSTRASI</p>
+              <svg viewBox="0 0 260 120" class="mt-3 h-auto w-full" aria-hidden="true">
+                <rect x="10" y="20" width="90" height="70" fill="none" stroke="#78716c" stroke-width="2" stroke-dasharray="6 5" />
+                <rect x="120" y="40" width="70" height="50" fill="none" stroke="#78716c" stroke-width="2" stroke-dasharray="6 5" />
+                <path d="M20 90l40-40m100 40-30-30" stroke="#78716c" stroke-width="1.5" />
+              </svg>
+              <p class="mt-2 text-sm text-muted-ink">Sempit · gelap · menumpuk</p>
+            </div>
+            <div class="border-t border-line bg-gold-wash p-6 sm:border-t-0 sm:border-l sm:p-8">
+              <p class="text-[13px] font-semibold tracking-wide text-gold-deep">SESUDAH · ILUSTRASI</p>
+              <svg viewBox="0 0 260 120" class="mt-3 h-auto w-full" aria-hidden="true">
+                <rect x="10" y="20" width="90" height="70" rx="8" fill="#fffdfb" stroke="#1c1917" stroke-width="2" />
+                <rect x="120" y="40" width="70" height="50" rx="6" fill="#f4efe8" stroke="#4f5d46" stroke-width="2" />
+                <circle cx="220" cy="40" r="12" fill="#f7e8d3" stroke="#92400e" stroke-width="2" />
+              </svg>
+              <p class="mt-2 text-sm text-ink-soft">Lega · terang · tiap barang ada tempat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proses -->
+    <section id="proses" aria-labelledby="judul-proses" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+        <div class="max-w-[60ch]">
+          <h2 id="judul-proses" class="reveal font-display text-3xl font-semibold tracking-[-0.015em] text-balance sm:text-4xl lg:text-[2.9rem] lg:leading-[1.1]">
+            Tiga tahap, bisa diperiksa.
+          </h2>
+          <p class="reveal mt-4 max-w-[48ch] text-base leading-7 text-muted-ink sm:text-lg sm:leading-8">
+            Posisi Anda membaca = posisi proyek Anda nanti.
+          </p>
+        </div>
+
+        <div id="spine-wrap" class="relative mt-14 grid gap-8 lg:grid-cols-[56px_1fr] lg:gap-10">
+          <div class="relative hidden justify-center lg:flex" aria-hidden="true">
+            <div class="spine-rail absolute top-2 bottom-2 w-[3px] rounded-full"></div>
+            <div id="spine-fill" class="spine-fill absolute top-2 bottom-2 w-[3px] rounded-full"></div>
+          </div>
+          <ol class="space-y-6">
+            <li class="reveal rounded-2xl border border-line bg-paper p-6 shadow-[0_16px_32px_-24px_rgba(28,25,23,0.35)] sm:p-8">
+              <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <span class="tnum inline-flex h-11 w-11 items-center justify-center rounded-full bg-clay font-display text-xl font-semibold text-paper">1</span>
+                <h3 class="font-display text-xl font-semibold sm:text-2xl">Konsultasi awal</h3>
+                <span class="rounded-full border border-line bg-card px-3 py-1 text-[13px] font-medium text-muted-ink">± 60 mnt · foto + ukuran kasar</span>
+              </div>
+              <p class="mt-3 max-w-[56ch] text-[15px] leading-7 text-muted-ink">Cerita kebiasaan di rumah. Kami ukur ulang + sepakati biaya &amp; jadwal.</p>
+              <p class="mt-3 inline-flex items-center gap-2 rounded-full bg-sage-wash px-3.5 py-1.5 text-[13px] font-medium text-sage-deep"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Ringkasan + rentang biaya tertulis</p>
+            </li>
+            <li class="reveal rounded-2xl border border-line bg-paper p-6 shadow-[0_16px_32px_-24px_rgba(28,25,23,0.35)] sm:p-8" style="--reveal-delay:80ms">
+              <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <span class="tnum inline-flex h-11 w-11 items-center justify-center rounded-full bg-gold font-display text-xl font-semibold text-paper">2</span>
+                <h3 class="font-display text-xl font-semibold sm:text-2xl">Konsep + gambar kerja</h3>
+                <span class="rounded-full border border-line bg-card px-3 py-1 text-[13px] font-medium text-muted-ink">denah · material · 2x revisi</span>
+              </div>
+              <p class="mt-3 max-w-[56ch] text-[15px] leading-7 text-muted-ink">Konsep diuji di denah berskala. Perubahan tercatat, keputusan selesai.</p>
+              <p class="mt-3 inline-flex items-center gap-2 rounded-full bg-sage-wash px-3.5 py-1.5 text-[13px] font-medium text-sage-deep"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Paket gambar + daftar belanja</p>
+            </li>
+            <li class="reveal rounded-2xl border border-line bg-paper p-6 shadow-[0_16px_32px_-24px_rgba(28,25,23,0.35)] sm:p-8" style="--reveal-delay:140ms">
+              <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <span class="tnum inline-flex h-11 w-11 items-center justify-center rounded-full bg-sage font-display text-xl font-semibold text-paper">3</span>
+                <h3 class="font-display text-xl font-semibold sm:text-2xl">Instalasi + serah terima</h3>
+                <span class="rounded-full border border-line bg-card px-3 py-1 text-[13px] font-medium text-muted-ink">jadwal pasang · checklist</span>
+              </div>
+              <p class="mt-3 max-w-[56ch] text-[15px] leading-7 text-muted-ink">Pasang sesuai urutan gambar. Periksa bersama sampai rapi.</p>
+              <p class="mt-3 inline-flex items-center gap-2 rounded-full bg-sage-wash px-3.5 py-1.5 text-[13px] font-medium text-sage-deep"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Ruang siap huni + catatan rawat</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" aria-labelledby="judul-kontak" class="border-t border-line">
+      <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+        <div class="reveal glow-kontak overflow-hidden rounded-3xl text-paper ring-1 ring-white/10">
+          <div class="grid gap-10 p-7 sm:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:p-14">
+            <div>
+              <h2 id="judul-kontak" class="font-display text-3xl font-semibold tracking-[-0.015em] text-balance sm:text-4xl">
+                Ceritakan rumah Anda.
+              </h2>
+              <p class="mt-4 max-w-[44ch] text-base leading-7 text-[#e9e2d8] sm:text-lg sm:leading-8">
+                Ukuran, ruangan, gambaran biaya. Kami jawab cocok atau tidak.
+              </p>
+              <fieldset class="mt-6" id="pilih-cakupan">
+                <legend class="text-[14px] font-semibold text-[#e9e2d8]">Pilih 1 cakupan — template chat mengikuti pilihan:</legend>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <label class="inline-flex cursor-pointer items-center rounded-full">
+                    <input type="radio" name="cakupan" value="Desain konsep hunian" class="peer sr-only" />
+                    <span class="inline-flex min-h-11 items-center rounded-full border border-night-line bg-night-soft px-4 py-2.5 text-[14px] font-medium text-[#e9e2d8] transition-colors hover:border-gold-line peer-checked:border-paper peer-checked:bg-paper peer-checked:text-ink peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#f7e8d3]">Desain konsep hunian</span>
+                  </label>
+                  <label class="inline-flex cursor-pointer items-center rounded-full">
+                    <input type="radio" name="cakupan" value="Gambar kerja + pendampingan" class="peer sr-only" />
+                    <span class="inline-flex min-h-11 items-center rounded-full border border-night-line bg-night-soft px-4 py-2.5 text-[14px] font-medium text-[#e9e2d8] transition-colors hover:border-gold-line peer-checked:border-paper peer-checked:bg-paper peer-checked:text-ink peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#f7e8d3]">Gambar kerja + pendampingan</span>
+                  </label>
+                  <label class="inline-flex cursor-pointer items-center rounded-full">
+                    <input type="radio" name="cakupan" value="Penataan ulang tanpa bongkar" class="peer sr-only" />
+                    <span class="inline-flex min-h-11 items-center rounded-full border border-night-line bg-night-soft px-4 py-2.5 text-[14px] font-medium text-[#e9e2d8] transition-colors hover:border-gold-line peer-checked:border-paper peer-checked:bg-paper peer-checked:text-ink peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#f7e8d3]">Penataan ulang tanpa bongkar</span>
+                  </label>
+                  <label class="inline-flex cursor-pointer items-center rounded-full">
+                    <input type="radio" name="cakupan" value="Kurasi material & furnitur" class="peer sr-only" />
+                    <span class="inline-flex min-h-11 items-center rounded-full border border-night-line bg-night-soft px-4 py-2.5 text-[14px] font-medium text-[#e9e2d8] transition-colors hover:border-gold-line peer-checked:border-paper peer-checked:bg-paper peer-checked:text-ink peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#f7e8d3]">Kurasi material &amp; furnitur</span>
+                  </label>
+                </div>
+                <p class="mt-2 text-[13px] leading-5 text-[#a8a29e]">Pilihan ini hanya mengisi template di samping — tidak mengirim apa pun.</p>
+              </fieldset>
+              <ul class="mt-6 space-y-2 text-[15px] leading-6 text-[#e9e2d8]">
+                <li class="flex gap-2.5"><span class="tnum font-semibold text-gold-soft">a.</span> 3 pertanyaan lanjutan, bukan penawaran langsung.</li>
+                <li class="flex gap-2.5"><span class="tnum font-semibold text-gold-soft">b.</span> Jadwal + rentang biaya di awal.</li>
+                <li class="flex gap-2.5"><span class="tnum font-semibold text-gold-soft">c.</span> Tanpa komitmen sampai konsep oke.</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-night-line bg-night-soft p-6 sm:p-7">
+              <p class="text-[15px] font-semibold">Chat untuk konsultasi</p>
+              <p class="mt-1.5 text-sm leading-6 text-[#c9c2b8]">
+                Contoh portofolio — tidak mengirim ke mana pun. Salin template, tempel di aplikasi chat pilihan Anda.
+              </p>
+              <div class="mt-5 rounded-xl border border-night-line bg-night p-4" role="group" aria-labelledby="template-judul">
+                <p id="template-judul" class="text-[12px] font-semibold tracking-wide text-[#a8a29e]">TEMPLATE CHAT · KETUK SALIN</p>
+                <p id="template-chat" class="mt-2 text-sm leading-6 break-words text-[#e9e2d8]">
+                  Halo Rangka, saya ingin konsultasi. Hunian saya [rumah/apartemen, ±__ m², __ ruang]. Kebutuhan: [mis. zonasi ruang tamu + penyimpanan]. Bisa info jadwal + rentang biaya awal? Terima kasih.
+                </p>
+              </div>
+              <button
+                type="button"
+                id="salin-template"
+                data-copy-target="template-chat"
+                aria-describedby="salin-status"
+                class="mt-4 inline-flex min-h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-paper px-6 py-3.5 text-[15px] font-semibold text-ink transition-colors duration-200 hover:bg-gold-soft disabled:cursor-not-allowed disabled:opacity-70"
+              >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <rect x="5" y="5" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M11 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+                <span data-copy-label>Salin template chat</span>
+              </button>
+              <p id="salin-status" role="status" aria-live="polite" class="tnum mt-2 min-h-5 text-[13px] leading-5 text-[#a8a29e]"></p>
+              <a
+                href="#proses"
+                class="mt-3 inline-flex min-h-11 w-full items-center justify-center rounded-full border border-night-line px-6 py-3 text-[15px] font-semibold text-paper transition-colors duration-200 hover:border-gold-line"
+              >
+                Baca ulang proses
+              </a>
+              <p class="tnum mt-4 text-[13px] leading-5 text-[#a8a29e]">Respons contoh: hari kerja · 09.00–17.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+      <p class="flex items-center gap-2.5">
+        <svg width="24" height="24" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="27" height="27" rx="7" stroke="#1c1917" stroke-width="2" />
+          <circle cx="15" cy="15" r="4" fill="#92400e" />
+        </svg>
+        <span class="font-display text-base font-semibold">Rangka</span>
+        <span class="text-sm text-muted-ink">— studio fiktif, contoh portofolio.</span>
+      </p>
+      <nav class="flex flex-wrap gap-1 text-sm font-medium" aria-label="Navigasi footer">
+        <a href="#layanan" class="min-h-11 rounded-lg px-3 py-2.5 text-ink-soft hover:text-ink">Layanan</a>
+        <a href="#gaya" class="min-h-11 rounded-lg px-3 py-2.5 text-ink-soft hover:text-ink">Gaya</a>
+        <a href="#proses" class="min-h-11 rounded-lg px-3 py-2.5 text-ink-soft hover:text-ink">Proses</a>
+        <a href="#kontak" class="min-h-11 rounded-lg px-3 py-2.5 text-ink-soft hover:text-ink">Kontak</a>
+      </nav>
+      <p class="tnum text-[13px] text-muted-ink">© 2026 · Tanpa klaim klien, penghargaan, atau statistik.</p>
+    </div>
+  </footer>
+
+  <script>
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const items = document.querySelectorAll(".reveal");
+    if (reduce || !("IntersectionObserver" in window)) {
+      items.forEach((el) => el.classList.add("is-in"));
+    } else {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("is-in");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+      );
+      items.forEach((el) => io.observe(el));
+    }
+
+    const wrap = document.getElementById("spine-wrap");
+    const fill = document.getElementById("spine-fill");
+    const setSpine = () => {
+      if (!wrap || !fill) return;
+      if (reduce) {
+        fill.style.transform = "scaleY(1)";
+        return;
+      }
+      const r = wrap.getBoundingClientRect();
+      const vh = window.innerHeight || 800;
+      const total = r.height - vh * 0.4;
+      const done = Math.min(1, Math.max(0, (vh * 0.7 - r.top) / Math.max(1, total)));
+      fill.style.transform = `scaleY(${done.toFixed(3)})`;
+    };
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setSpine();
+        ticking = false;
+      });
+    };
+    setSpine();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+
+    const copyBtn = document.getElementById("salin-template");
+    const copyStatus = document.getElementById("salin-status");
+    const templateEl = document.getElementById("template-chat");
+    const contohKebutuhan = {
+      "Desain konsep hunian": "[mis. denah + suasana ruang tamu 3×4 m]",
+      "Gambar kerja + pendampingan": "[mis. ukuran + titik listrik dapur 2×3 m]",
+      "Penataan ulang tanpa bongkar": "[mis. zonasi ruang tamu + penyimpanan]",
+      "Kurasi material & furnitur": "[mis. kayu terang + kain natural kamar tidur]",
+    };
+    const templateUntuk = (layanan) => {
+      const kebutuhan = contohKebutuhan[layanan] || "[ceritakan kebutuhan]";
+      return `Halo Rangka, saya ingin konsultasi ${layanan}. Hunian saya [rumah/apartemen, ±__ m², __ ruang]. Kebutuhan: ${kebutuhan} Bisa info jadwal + rentang biaya awal? Terima kasih.`;
+    };
+    let resetTimer = 0;
+    const setStatus = (msg) => {
+      if (copyStatus) copyStatus.textContent = msg;
+    };
+    const setLabel = (msg) => {
+      const label = copyBtn ? copyBtn.querySelector("[data-copy-label]") : null;
+      if (label) label.textContent = msg;
+    };
+    const fallbackCopy = (text) => {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      let ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch {
+        ok = false;
+      }
+      ta.remove();
+      return ok;
+    };
+    if (copyBtn) {
+      copyBtn.addEventListener("click", async () => {
+        const targetId = copyBtn.getAttribute("data-copy-target");
+        const source = targetId ? document.getElementById(targetId) : null;
+        const text = (source ? source.textContent : "").trim();
+        if (!text) {
+          setStatus("Template kosong — muat ulang halaman lalu coba lagi.");
+          return;
+        }
+        copyBtn.disabled = true;
+        window.clearTimeout(resetTimer);
+        let ok = false;
+        try {
+          if (navigator.clipboard && window.isSecureContext !== false) {
+            await navigator.clipboard.writeText(text);
+            ok = true;
+          } else {
+            ok = fallbackCopy(text);
+          }
+        } catch {
+          ok = fallbackCopy(text);
+        }
+        if (ok) {
+          setLabel("Tersalin!");
+          setStatus("Tersalin — tempel di aplikasi chat pilihan Anda.");
+        } else {
+          setLabel("Salin template chat");
+          setStatus("Gagal menyalin otomatis — blok teks di atas lalu salin manual.");
+        }
+        resetTimer = window.setTimeout(() => {
+          copyBtn.disabled = false;
+          if (ok) setLabel("Salin template chat");
+        }, 1200);
+      });
+    }
+
+    const cakupanInputs = document.querySelectorAll('input[name="cakupan"]');
+    const pilihCakupan = (layanan, umumkan = true) => {
+      if (!layanan || !templateEl) return;
+      cakupanInputs.forEach((input) => {
+        if (input.value === layanan) input.checked = true;
+      });
+      templateEl.textContent = templateUntuk(layanan);
+      if (umumkan) setStatus(`Dipilih: ${layanan} — template sudah terisi, tinggal salin.`);
+    };
+    cakupanInputs.forEach((input) => {
+      input.addEventListener("change", () => {
+        if (input.checked) pilihCakupan(input.value, true);
+      });
+    });
+    document.querySelectorAll("a[data-layanan]").forEach((link) => {
+      link.addEventListener("click", () => {
+        const layanan = link.getAttribute("data-layanan");
+        if (layanan) pilihCakupan(layanan, true);
+      });
+    });
+  </script>
+</Layout>
