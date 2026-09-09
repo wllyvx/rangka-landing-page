@@ -1,0 +1,142 @@
+---
+import IkonPanah from "./IkonPanah.astro";
+---
+<section id="layanan" aria-labelledby="judul-layanan" class="border-t border-line">
+  <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+    <div class="max-w-[60ch]">
+      <h2 id="judul-layanan" class="reveal font-display text-3xl font-semibold tracking-[-0.015em] text-balance sm:text-4xl lg:text-[2.9rem] lg:leading-[1.1]">
+        Layanan untuk rumah yang lebih nyaman.
+      </h2>
+      <p class="reveal mt-4 max-w-[48ch] text-base leading-7 text-muted-ink sm:text-lg sm:leading-8">
+        Pilih sesuai kebutuhan, atau ikuti dari awal sampai akhir.
+      </p>
+    </div>
+
+    <dl class="mt-14 divide-y divide-line border-y border-line">
+      <div class="reveal grid gap-6 py-10 lg:grid-cols-[56px_1fr_280px] lg:items-center lg:gap-10">
+        <span class="hidden h-14 w-14 items-center justify-center rounded-2xl border border-gold-line bg-gold-wash lg:inline-flex" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 16c2-5 5-8 10-9l4-1-1 4c-1 5-4 8-9 10l-4-4Z" stroke="#92400e" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="14" r="1.6" fill="#92400e"/><circle cx="13" cy="11" r="1.6" fill="#92400e"/></svg>
+        </span>
+        <div>
+          <dt class="font-display text-xl font-semibold sm:text-2xl">Desain konsep hunian</dt>
+          <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Menentukan tata ruang, suasana, dan material sebelum pekerjaan dimulai.</dd>
+          <dd class="mt-2 text-[13px] font-medium text-muted-ink">Yang dibawa pulang: denah + daftar material</dd>
+          <dd class="mt-3">
+            <a
+              href="#kontak"
+              data-layanan="Desain konsep hunian"
+              class="inline-flex min-h-11 items-center gap-2 rounded-lg px-1 py-2 text-[14px] font-semibold text-gold-deep underline decoration-gold-line decoration-2 underline-offset-4 transition-colors hover:text-ink"
+              aria-label="Bahas kebutuhan desain konsep hunian — ke kontak"
+            >
+              Bahas kebutuhan ini
+              <IkonPanah />
+            </a>
+          </dd>
+        </div>
+        <div class="rounded-2xl border border-line bg-card p-5">
+          <p class="text-[13px] font-semibold tracking-wide text-muted-ink">PALET CONTOH</p>
+          <div class="mt-3 flex items-center gap-2.5" aria-hidden="true">
+            <span class="h-10 w-10 rounded-lg border border-line-strong bg-oak"></span>
+            <span class="h-10 w-10 rounded-lg border border-sage-line bg-sage-soft"></span>
+            <span class="h-10 w-10 rounded-lg border border-line bg-kapur"></span>
+          </div>
+          <p class="mt-3 text-[13px] leading-5 text-muted-ink">oak · sage · kapur — untuk membantu membayangkan ruang</p>
+        </div>
+      </div>
+
+      <div class="reveal grid gap-6 py-10 lg:grid-cols-[56px_1fr_280px] lg:items-center lg:gap-10">
+        <span class="hidden h-14 w-14 items-center justify-center rounded-2xl border border-sage-line bg-sage-wash lg:inline-flex" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 17 17 3l4 4L7 21H3v-4Z" stroke="#4f5d46" stroke-width="1.8" stroke-linejoin="round"/><path d="M13 7l4 4" stroke="#4f5d46" stroke-width="1.8"/></svg>
+        </span>
+        <div>
+          <dt class="font-display text-xl font-semibold sm:text-2xl">Gambar kerja + pendampingan</dt>
+          <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Menerjemahkan konsep menjadi ukuran, titik listrik, dan urutan pemasangan yang jelas.</dd>
+          <dd class="mt-2 text-[13px] font-medium text-muted-ink">Yang dibawa pulang: gambar kerja yang terukur</dd>
+          <dd class="mt-3">
+            <a
+              href="#kontak"
+              data-layanan="Gambar kerja + pendampingan"
+              class="inline-flex min-h-11 items-center gap-2 rounded-lg px-1 py-2 text-[14px] font-semibold text-gold-deep underline decoration-gold-line decoration-2 underline-offset-4 transition-colors hover:text-ink"
+              aria-label="Bahas kebutuhan gambar kerja dan pendampingan — ke kontak"
+            >
+              Bahas kebutuhan ini
+              <IkonPanah />
+            </a>
+          </dd>
+        </div>
+        <div class="rounded-2xl border border-line bg-card p-5">
+          <p class="text-[13px] font-semibold tracking-wide text-muted-ink">DENAH CONTOH</p>
+          <svg viewBox="0 0 280 140" class="mt-3 h-auto w-full" aria-hidden="true">
+            <rect x="18" y="18" width="244" height="104" fill="none" stroke="#1c1917" stroke-width="2.5" />
+            <path d="M18 60h244M100 18v104M182 18v104" stroke="#c8cfb8" stroke-width="1.5" />
+            <rect x="28" y="70" width="56" height="32" fill="#fbe7d6" stroke="#9a3f1f" stroke-width="2" />
+            <circle cx="140" cy="42" r="5" fill="#92400e" />
+            <path d="M196 96h44" stroke="#4f5d46" stroke-width="1.8" />
+          </svg>
+          <p class="mt-3 text-[13px] leading-5 text-muted-ink">ukuran + titik listrik, tertulis dengan jelas</p>
+        </div>
+      </div>
+
+      <div class="reveal grid gap-6 py-10 lg:grid-cols-[56px_1fr_280px] lg:items-center lg:gap-10">
+        <span class="hidden h-14 w-14 items-center justify-center rounded-2xl border border-clay-line bg-clay-wash lg:inline-flex" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 9h13l-3-3M20 15H7l3 3" stroke="#9a3f1f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <div>
+          <dt class="font-display text-xl font-semibold sm:text-2xl">Penataan ulang tanpa bongkar</dt>
+          <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Merapikan zonasi, cahaya, dan penyimpanan tanpa harus membongkar ruang.</dd>
+          <dd class="mt-2 text-[13px] font-medium text-muted-ink">Yang dibawa pulang: zonasi baru tanpa renovasi besar</dd>
+          <dd class="mt-3">
+            <a
+              href="#kontak"
+              data-layanan="Penataan ulang tanpa bongkar"
+              class="inline-flex min-h-11 items-center gap-2 rounded-lg px-1 py-2 text-[14px] font-semibold text-gold-deep underline decoration-gold-line decoration-2 underline-offset-4 transition-colors hover:text-ink"
+              aria-label="Bahas kebutuhan penataan ulang tanpa bongkar — ke kontak"
+            >
+              Bahas kebutuhan ini
+              <IkonPanah />
+            </a>
+          </dd>
+        </div>
+        <div class="rounded-2xl border border-line bg-card p-5">
+          <p class="text-[13px] font-semibold tracking-wide text-muted-ink">PERUBAHAN KECIL</p>
+          <ul class="mt-2 text-sm leading-6 text-ink-soft" aria-label="Contoh perubahan kecil">
+            <li class="flex gap-2.5 py-1"><svg width="16" height="16" viewBox="0 0 16 16" class="mt-1 shrink-0" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5" stroke="#4f5d46" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Sofa ke sisi cahaya pagi</li>
+            <li class="flex gap-2.5 py-1"><svg width="16" height="16" viewBox="0 0 16 16" class="mt-1 shrink-0" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5" stroke="#4f5d46" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Rak tinggi, bukan lemari baru</li>
+            <li class="flex gap-2.5 py-1"><svg width="16" height="16" viewBox="0 0 16 16" class="mt-1 shrink-0" aria-hidden="true"><path d="m3 8.5 3.2 3L13 4.5" stroke="#4f5d46" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Pisah area kerja &amp; istirahat</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reveal grid gap-6 py-10 lg:grid-cols-[56px_1fr_280px] lg:items-center lg:gap-10">
+        <span class="hidden h-14 w-14 items-center justify-center rounded-2xl border border-line bg-card lg:inline-flex" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v5l-9 9H4v-7l9-9" stroke="#1c1917" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="10" r="1.6" fill="#1c1917"/></svg>
+        </span>
+        <div>
+          <dt class="font-display text-xl font-semibold sm:text-2xl">Kurasi material &amp; furnitur</dt>
+          <dd class="mt-2 max-w-[52ch] text-[15px] leading-7 text-muted-ink">Memilih kayu terang, kain natural, dan benda yang mudah dirawat — dengan beberapa alternatif.</dd>
+          <dd class="mt-2 text-[13px] font-medium text-muted-ink">Pilihan yang bisa dibandingkan, tanpa janji merek atau harga pasti</dd>
+          <dd class="mt-3">
+            <a
+              href="#kontak"
+              data-layanan="Kurasi material & furnitur"
+              class="inline-flex min-h-11 items-center gap-2 rounded-lg px-1 py-2 text-[14px] font-semibold text-gold-deep underline decoration-gold-line decoration-2 underline-offset-4 transition-colors hover:text-ink"
+              aria-label="Bahas kebutuhan kurasi material dan furnitur — ke kontak"
+            >
+              Bahas kebutuhan ini
+              <IkonPanah />
+            </a>
+          </dd>
+        </div>
+        <div class="rounded-2xl border border-line bg-card p-5">
+          <p class="text-[13px] font-semibold tracking-wide text-muted-ink">DAFTAR KURASI · CONTOH</p>
+          <ul class="mt-2 space-y-1.5 text-sm leading-6 text-ink-soft">
+            <li class="flex justify-between gap-4"><span>Kursi kayu</span><span class="tnum text-muted-ink">6</span></li>
+            <li class="flex justify-between gap-4"><span>Linen natural</span><span class="tnum text-muted-ink">2 set</span></li>
+            <li class="flex justify-between gap-4"><span>Lampu hangat</span><span class="tnum text-muted-ink">1</span></li>
+          </ul>
+          <p class="mt-3 text-[13px] leading-5 text-muted-ink">dengan alternatif mudah dirawat</p>
+        </div>
+      </div>
+    </dl>
+  </div>
+</section>

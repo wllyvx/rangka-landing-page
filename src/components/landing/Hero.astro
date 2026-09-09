@@ -1,0 +1,95 @@
+---
+import IkonPanah from "./IkonPanah.astro";
+---
+<section id="atas" aria-labelledby="judul-hero" class="wash-hero relative overflow-hidden">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 pt-16 pb-20 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-16 lg:pt-28 lg:pb-28">
+    <div>
+      <h1 id="judul-hero" class="reveal font-display max-w-[20ch] text-4xl leading-[1.06] font-semibold tracking-[-0.02em] text-balance sm:text-5xl lg:text-[3.8rem]">
+        Rumah yang rapi dan tenang, dari konsep sampai terpasang.
+      </h1>
+      <p class="reveal mt-5 max-w-[44ch] text-base leading-7 text-muted-ink sm:text-lg sm:leading-8" style="--reveal-delay:80ms">
+        Untuk rumah dan apartemen yang ingin terasa lebih terang, hangat, dan mudah ditinggali — dari obrolan awal sampai serah terima.
+      </p>
+      <div class="reveal mt-8 flex flex-wrap items-center gap-x-6 gap-y-3" style="--reveal-delay:140ms">
+        <a
+          href="#kontak"
+          class="inline-flex min-h-11 items-center gap-2 rounded-full bg-ink px-6 py-3 text-[15px] font-semibold text-paper transition-colors duration-200 hover:bg-night-soft"
+        >
+          Mulai ngobrol
+          <IkonPanah />
+        </a>
+        <a
+          href="#proses"
+          class="inline-flex min-h-11 items-center gap-1.5 rounded-lg px-1 py-2 text-[15px] font-semibold text-ink-soft underline decoration-line-strong decoration-2 underline-offset-4 transition-colors duration-200 hover:text-ink"
+        >
+          Lihat prosesnya
+          <IkonPanah size={14} />
+        </a>
+      </div>
+      <p class="reveal mt-5 text-[13px] leading-6 text-muted-ink" style="--reveal-delay:200ms">
+        Studio fiktif · contoh portofolio — dari konsep sampai instalasi
+      </p>
+    </div>
+
+    <!-- Visual utama: ilustrasi ruang, bukan foto proyek -->
+    <!-- illustration-palette: intentional literal — SVG artwork hex maps to --color-oak / --color-sage-mid / --color-kapur / --color-paper-bright in global.css, see DESIGN.md -->
+    <figure class="reveal relative" style="--reveal-delay:120ms" aria-labelledby="ruang-caption">
+      <div class="overflow-hidden rounded-3xl border border-line bg-card shadow-[0_32px_64px_-32px_rgba(28,25,23,0.35)]">
+        <svg viewBox="0 0 560 430" role="img" aria-labelledby="ruang-title ruang-desc" class="block h-auto w-full">
+          <title id="ruang-title">Ilustrasi contoh ruang tamu Skandinavia</title>
+          <desc id="ruang-desc">Ruang tamu terang dengan sofa kain, meja kayu, karpet, lampu gantung, jendela, rak, dan tanaman.</desc>
+          <rect x="0" y="0" width="560" height="290" fill="#f3ebe1" />
+          <rect x="0" y="290" width="560" height="140" fill="#d9b98f" />
+          <g stroke="#b68f5e" stroke-width="1.5" opacity="0.7">
+            <path d="M0 318h560M0 348h560M0 378h560M0 408h560" />
+          </g>
+          <!-- jendela + cahaya -->
+          <rect x="48" y="36" width="132" height="196" rx="6" fill="#fffdfb" stroke="#1c1917" stroke-width="2.5" />
+          <path d="M114 36v196M48 134h132" stroke="#1c1917" stroke-width="1.8" />
+          <path d="M180 60 320 260 180 260Z" fill="#ffffff" opacity="0.45" />
+          <!-- wall art -->
+          <rect x="232" y="52" width="86" height="108" rx="6" fill="#fffdfb" stroke="#1c1917" stroke-width="2" />
+          <path d="M246 130c8-22 20-30 30-44 8 12 18 18 28 26v32H246Z" fill="#8b9a7b" opacity="0.85" />
+          <circle cx="266" cy="84" r="10" fill="#f7e8d3" stroke="#92400e" stroke-width="1.5" />
+          <!-- rak -->
+          <rect x="348" y="120" width="156" height="10" rx="3" fill="#1c1917" />
+          <rect x="360" y="92" width="22" height="28" rx="4" fill="#fbe7d6" stroke="#9a3f1f" stroke-width="1.5" />
+          <rect x="390" y="100" width="30" height="20" rx="2" fill="#4f5d46" />
+          <path d="M436 120c-2-14 4-20 0-30m0 30c8-4 12-10 14-18" stroke="#3d4837" stroke-width="1.8" stroke-linecap="round" />
+          <!-- lampu gantung -->
+          <path d="M300 0v44" stroke="#1c1917" stroke-width="2" />
+          <path d="M274 44h52l10 30H264Z" fill="#f7e8d3" stroke="#92400e" stroke-width="2" />
+          <ellipse cx="300" cy="82" rx="8" ry="5" fill="#92400e" />
+          <!-- sofa -->
+          <ellipse cx="280" cy="352" rx="150" ry="20" fill="#1c1917" opacity="0.08" />
+          <rect x="148" y="196" width="248" height="86" rx="14" fill="#f4efe8" stroke="#1c1917" stroke-width="2.5" />
+          <rect x="148" y="196" width="40" height="86" rx="14" fill="#e9e2d8" stroke="#1c1917" stroke-width="2" />
+          <rect x="356" y="196" width="40" height="86" rx="14" fill="#e9e2d8" stroke="#1c1917" stroke-width="2" />
+          <path d="M208 216v44M272 216v44" stroke="#d6cdbf" stroke-width="2" />
+          <rect x="168" y="222" width="52" height="40" rx="10" fill="#fbe7d6" stroke="#9a3f1f" stroke-width="1.8" />
+          <rect x="320" y="222" width="52" height="40" rx="10" fill="#e8ebe0" stroke="#4f5d46" stroke-width="1.8" />
+          <!-- meja + rug -->
+          <ellipse cx="280" cy="356" rx="132" ry="20" fill="#fffdfb" stroke="#e7e0d9" stroke-width="2" />
+          <rect x="196" y="306" width="168" height="14" rx="7" fill="#fffdfb" stroke="#1c1917" stroke-width="2" />
+          <path d="M210 320v22m140-22v22" stroke="#1c1917" stroke-width="2.5" />
+          <rect x="248" y="282" width="26" height="24" rx="4" fill="#8b9a7b" />
+          <rect x="280" y="290" width="40" height="16" rx="2" fill="#1c1917" />
+          <!-- tanaman -->
+          <rect x="448" y="252" width="44" height="52" rx="8" fill="#fbf1e2" stroke="#92400e" stroke-width="2" />
+          <path d="M470 252c-2-18 6-28 0-42m0 42c2-16-6-26 0-40m0 40c-12-4-20-14-22-26m22 26c12-4 20-14 22-26" stroke="#3d4837" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <div class="flex flex-wrap items-center justify-between gap-3 border-t border-line px-5 py-4">
+          <span class="flex items-center gap-2" aria-hidden="true">
+            <span class="h-7 w-7 rounded-md border border-line-strong bg-oak"></span>
+            <span class="h-7 w-7 rounded-md border border-sage-line bg-sage-mid"></span>
+            <span class="h-7 w-7 rounded-md border border-line-strong bg-kapur"></span>
+            <span class="ml-1 text-[13px] font-medium text-muted-ink">oak · sage · kapur</span>
+          </span>
+          <figcaption id="ruang-caption" class="text-[13px] leading-5 text-muted-ink">
+            Ilustrasi contoh — bukan foto proyek nyata.
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>

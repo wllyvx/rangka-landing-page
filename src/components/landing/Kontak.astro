@@ -1,0 +1,184 @@
+---
+---
+<section id="kontak" aria-labelledby="judul-kontak" class="border-t border-line">
+  <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+    <div class="reveal glow-kontak overflow-hidden rounded-3xl text-paper ring-1 ring-white/10">
+      <div class="grid gap-10 p-7 sm:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:p-14">
+        <div>
+          <h2 id="judul-kontak" class="font-display text-3xl font-semibold tracking-[-0.015em] text-balance sm:text-4xl">
+            Ceritakan rumah Anda.
+          </h2>
+          <p class="mt-4 max-w-[44ch] text-base leading-7 text-night-muted sm:text-lg sm:leading-8">
+            Ceritakan ruang yang ingin dibenahi. Kami bantu melihat langkah dan kisaran biaya yang paling masuk akal.
+          </p>
+          <fieldset class="mt-6" id="pilih-cakupan">
+            <legend class="text-[14px] font-semibold text-night-muted">Pilih satu kebutuhan. Template chat akan menyesuaikan:</legend>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <label class="inline-flex cursor-pointer items-center rounded-full">
+                <input type="radio" name="cakupan" value="Desain konsep hunian" class="peer sr-only" />
+                <span class="inline-flex min-h-11 items-center rounded-full border border-night-line bg-night-soft px-4 py-2.5 text-[14px] font-medium text-night-muted transition-colors hover:border-gold-line peer-checked:border-paper peer-checked:bg-paper peer-checked:text-ink peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gold-soft">Desain konsep hunian</span>
+              </label>
+              <label class="inline-flex cursor-pointer items-center rounded-full">
+                <input type="radio" name="cakupan" value="Gambar kerja + pendampingan" class="peer sr-only" />
+                <span class="inline-flex min-h-11 items-center rounded-full border border-night-line bg-night-soft px-4 py-2.5 text-[14px] font-medium text-night-muted transition-colors hover:border-gold-line peer-checked:border-paper peer-checked:bg-paper peer-checked:text-ink peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gold-soft">Gambar kerja + pendampingan</span>
+              </label>
+              <label class="inline-flex cursor-pointer items-center rounded-full">
+                <input type="radio" name="cakupan" value="Penataan ulang tanpa bongkar" class="peer sr-only" />
+                <span class="inline-flex min-h-11 items-center rounded-full border border-night-line bg-night-soft px-4 py-2.5 text-[14px] font-medium text-night-muted transition-colors hover:border-gold-line peer-checked:border-paper peer-checked:bg-paper peer-checked:text-ink peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gold-soft">Penataan ulang tanpa bongkar</span>
+              </label>
+              <label class="inline-flex cursor-pointer items-center rounded-full">
+                <input type="radio" name="cakupan" value="Kurasi material & furnitur" class="peer sr-only" />
+                <span class="inline-flex min-h-11 items-center rounded-full border border-night-line bg-night-soft px-4 py-2.5 text-[14px] font-medium text-night-muted transition-colors hover:border-gold-line peer-checked:border-paper peer-checked:bg-paper peer-checked:text-ink peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gold-soft">Kurasi material &amp; furnitur</span>
+              </label>
+            </div>
+            <p class="mt-2 text-[13px] leading-5 text-night-faint">Pilihan ini hanya mengisi template di samping, tidak mengirim apa pun.</p>
+          </fieldset>
+          <ul class="mt-6 space-y-2 text-[15px] leading-6 text-night-muted">
+            <li class="flex gap-2.5"><span class="tnum font-semibold text-gold-soft">a.</span> Tiga pertanyaan lanjutan, bukan penawaran langsung.</li>
+            <li class="flex gap-2.5"><span class="tnum font-semibold text-gold-soft">b.</span> Jadwal dan kisaran biaya sejak awal.</li>
+            <li class="flex gap-2.5"><span class="tnum font-semibold text-gold-soft">c.</span> Belum ada komitmen sebelum konsep terasa tepat.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-night-line bg-night-soft p-6 sm:p-7">
+          <p class="text-[15px] font-semibold">Chat untuk konsultasi</p>
+          <p class="mt-1.5 text-sm leading-6 text-night-faint">
+            Contoh portofolio — template ini tidak mengirim pesan. Salin, lalu tempel di aplikasi chat pilihan Anda.
+          </p>
+          <div class="mt-5 rounded-xl border border-night-line bg-night p-4" role="group" aria-labelledby="template-judul">
+            <p id="template-judul" class="text-[13px] font-semibold tracking-wide text-night-faint">TEMPLATE CHAT</p>
+            <p id="template-chat" class="mt-2 text-sm leading-6 break-words text-night-muted">
+              Halo Rangka, saya ingin berkonsultasi. Saya tinggal di [rumah/apartemen, ±__ m², __ ruang] dan ingin membenahi [mis. zonasi ruang tamu + penyimpanan]. Bisa info jadwal dan kisaran biaya awal? Terima kasih.
+            </p>
+          </div>
+          <button
+            type="button"
+            id="salin-template"
+            data-copy-target="template-chat"
+            aria-describedby="salin-status"
+            class="mt-4 inline-flex min-h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-paper px-6 py-3.5 text-[15px] font-semibold text-ink transition-colors duration-200 hover:bg-gold-soft disabled:cursor-not-allowed disabled:opacity-70"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <rect x="5" y="5" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.8" />
+              <path d="M11 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+            <span data-copy-label>Salin template chat</span>
+          </button>
+          <p id="salin-status" role="status" aria-live="polite" class="tnum mt-2 min-h-5 text-[13px] leading-5 text-night-faint"></p>
+          <div class="mt-3 rounded-xl border border-night-line p-4">
+            <p class="text-[13px] font-semibold text-paper">Setelah itu?</p>
+            <p class="mt-1 text-[13px] leading-5 text-night-faint">Tempel di aplikasi chat. Anda akan mendapat tiga pertanyaan lanjutan, lalu jadwal dan kisaran biaya tertulis. Tanpa komitmen.</p>
+          </div>
+          <p class="tnum mt-4 text-[13px] leading-5 text-night-faint">Contoh waktu respons: hari kerja · 09.00–17.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const copyBtn = document.getElementById("salin-template");
+  const copyStatus = document.getElementById("salin-status");
+  const templateEl = document.getElementById("template-chat");
+  const contohKebutuhan: Record<string, string> = {
+    "Desain konsep hunian": "[mis. denah + suasana ruang tamu 3×4 m]",
+    "Gambar kerja + pendampingan": "[mis. ukuran + titik listrik dapur 2×3 m]",
+    "Penataan ulang tanpa bongkar": "[mis. zonasi ruang tamu + penyimpanan]",
+    "Kurasi material & furnitur": "[mis. kayu terang + kain natural kamar tidur]",
+  };
+  const templateUntuk = (layanan: string) => {
+    const kebutuhan = contohKebutuhan[layanan] || "[ceritakan kebutuhan]";
+    return `Halo Rangka, saya ingin berkonsultasi tentang ${layanan}. Saya tinggal di [rumah/apartemen, ±__ m², __ ruang] dan ingin membenahi ${kebutuhan}. Bisa info jadwal dan kisaran biaya awal? Terima kasih.`;
+  };
+  let resetTimer = 0;
+  const setStatus = (msg: string) => {
+    if (copyStatus) copyStatus.textContent = msg;
+  };
+  const setLabel = (msg: string) => {
+    const label = copyBtn ? copyBtn.querySelector("[data-copy-label]") : null;
+    if (label) label.textContent = msg;
+  };
+  const fallbackCopy = (text: string) => {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try {
+      ok = document.execCommand("copy");
+    } catch {
+      ok = false;
+    }
+    ta.remove();
+    return ok;
+  };
+  if (copyBtn) {
+    copyBtn.addEventListener("click", async () => {
+      const targetId = copyBtn.getAttribute("data-copy-target");
+      const source = targetId ? document.getElementById(targetId) : null;
+      const text = (source ? source.textContent : "").trim();
+      if (!text) {
+        setStatus("Template kosong — muat ulang halaman lalu coba lagi.");
+        return;
+      }
+      (copyBtn as HTMLButtonElement).disabled = true;
+      window.clearTimeout(resetTimer);
+      let ok = false;
+      try {
+        if (navigator.clipboard && window.isSecureContext !== false) {
+          await navigator.clipboard.writeText(text);
+          ok = true;
+        } else {
+          ok = fallbackCopy(text);
+        }
+      } catch {
+        ok = fallbackCopy(text);
+      }
+      if (ok) {
+        setLabel("Tersalin!");
+        setStatus("Tersalin — tempel di aplikasi chat pilihan Anda.");
+      } else {
+        setLabel("Salin template chat");
+        setStatus("Gagal menyalin otomatis — blok teks di atas lalu salin manual.");
+      }
+      resetTimer = window.setTimeout(() => {
+        (copyBtn as HTMLButtonElement).disabled = false;
+        if (ok) setLabel("Salin template chat");
+      }, 1200);
+    });
+  }
+
+  const cakupanInputs = document.querySelectorAll('input[name="cakupan"]');
+  const pilihCakupan = (layanan: string, umumkan = true) => {
+    if (!layanan || !templateEl) return;
+    cakupanInputs.forEach((input) => {
+      if ((input as HTMLInputElement).value === layanan) (input as HTMLInputElement).checked = true;
+    });
+    templateEl.textContent = templateUntuk(layanan);
+    try {
+      sessionStorage.setItem("rangka-cakupan", layanan);
+    } catch {
+      /* abaikan */
+    }
+    if (umumkan) setStatus(`Kebutuhan dipilih: ${layanan} — template sudah terisi dan siap disalin.`);
+  };
+  try {
+    const tersimpan = sessionStorage.getItem("rangka-cakupan");
+    if (tersimpan) pilihCakupan(tersimpan, false);
+  } catch {
+    /* abaikan */
+  }
+  cakupanInputs.forEach((input) => {
+    input.addEventListener("change", () => {
+      if ((input as HTMLInputElement).checked) pilihCakupan((input as HTMLInputElement).value, true);
+    });
+  });
+  document.querySelectorAll("a[data-layanan]").forEach((link) => {
+    link.addEventListener("click", () => {
+      const layanan = link.getAttribute("data-layanan");
+      if (layanan) pilihCakupan(layanan, true);
+    });
+  });
+</script>
