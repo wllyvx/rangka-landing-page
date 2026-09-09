@@ -63,6 +63,10 @@ body {
   border-radius: 4px;
 }
 
+.glow-kontak :focus-visible {
+  outline-color: var(--color-gold-soft);
+}
+
 a {
   text-underline-offset: 3px;
   text-decoration-thickness: 1.5px;
